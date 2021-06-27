@@ -404,3 +404,10 @@ a:hover {
     padding-top: 7rem;
     padding-bottom: 7rem;
 }
+
+@media screen and (max-width: 991px) {
+    #featured-description {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
