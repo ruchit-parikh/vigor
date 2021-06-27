@@ -48,4 +48,21 @@
     </div>
 </section>
 
+<section id="featured-description" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="vg-text-secondary">
+                    <?php echo carbon_get_the_post_meta('vg_home_featured_section_title'); ?>
+                </h2>
+            </div>
+            <div class="col-lg-6">
+                <div class="font-12">
+                    <?php echo wpautop(carbon_get_the_post_meta('vg_home_featured_section_description')); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>

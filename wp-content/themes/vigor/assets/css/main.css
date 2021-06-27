@@ -82,9 +82,17 @@ h6,
 strong,
 b {
     font-weight: 700;
-    text-transform: uppercase;
     font-style: italic;
     line-height: 1;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3.5rem;
 }
 
 a {
@@ -127,6 +135,10 @@ a:hover {
     .vg-bg-nlg-primary {
         background-color: #fed130 !important;
     }
+}
+
+.font-12 {
+    font-size: 1.2rem;
 }
 
 /** Buttons **/
@@ -264,7 +276,7 @@ a:hover {
     }
     
     #navbar .navbar-toggler {
-        margin-top: 20px;
+        margin-top: 10px;
         border: 0px;
         outline: 0px;
         transform: skewX(0deg);
@@ -366,11 +378,6 @@ a:hover {
     height: 100%;
     background: #00000035;
     z-index: 1;
-}
-
-#home-banner .heading h1 {
-    font-size: 6rem;
-    font-weight: 700;
 }
 
 #home-banner .heading span {

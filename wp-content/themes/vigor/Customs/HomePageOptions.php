@@ -39,6 +39,10 @@ class HomePageOptions
                             'value' => '-1',
                         )
                     )),
+
+                Field::make('separator', 'vg_home_featured_section', __('Featured Descriptions')),
+                Field::make('text', 'vg_home_featured_section_title', __('Title')),
+                Field::make('rich_text', 'vg_home_featured_section_description', __('Description')),
             ));
     }
 
