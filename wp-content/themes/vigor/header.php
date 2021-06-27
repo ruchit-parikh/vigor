@@ -21,7 +21,7 @@
 
 <body <?php body_class(); ?>>
     <header>
-        <nav class="navbar navbar-expand-lg bg-transparent vg-bg-nlg-primary fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-lg bg-transparent vg-bg-nlg-primary fixed-top navbar-light" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
                     <?php
@@ -37,9 +37,20 @@
                     ?>
                     <?php endif; ?>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="float-right">
+                    <a class="nav-cart d-lg-none" href="<?php echo wc_get_cart_url(); ?>">
+                        <i class="vg-icon-cart text-dark"></i>
+
+                        <?php if (($cart_count = WC()->cart->cart_contents_count)  > 0): ?>
+                            <span class="cart-contents-count">
+                                <?php echo $cart_count; ?> 
+                            </span>
+                        <?php endif; ?>
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
                 <?php
                     wp_nav_menu([
                         'menu'            => 'primary',

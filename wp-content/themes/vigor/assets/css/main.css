@@ -87,10 +87,13 @@ b {
     line-height: 1;
 }
 
-a,
-a:hover {
+a {
     color: #fed130;
     text-decoration: none;
+}
+
+a:hover {
+    color: #000;
 }
 
 ::-moz-selection {
@@ -218,13 +221,16 @@ a:hover {
 }
 
 #navbar .nav-cart span {
-    font-size: 1rem;
     background-color: #fed130;
     border-radius: 15px;
     padding: 1px 5px;
     line-height: 1;
     font-weight: 700;
     margin-left: 5px;
+    font-size: 1rem;
+    position: absolute;
+    top: -3px;
+    right: -5px;
 }
 
 #navbar.scrolled {
@@ -240,14 +246,38 @@ a:hover {
     display: inline-block !important;
 }
 
-#navbar.scrolled .nav-cart span {
+#navbar.scrolled .nav-link {
+    color: #000;
+}
+
+#navbar.scrolled .nav-cart span,
+#navbar.scrolled .nav-item:hover::after,
+#navbar.scrolled .nav-item.active::after {
     background-color: #000;
 }
 
 @media screen and (max-width: 991px) {
-    #navbar.vg-bg-nlg-primary {
+    #navbar {
         box-shadow: 0px 1px 10px #000c;
         border-bottom: 1px solid #000;
+    }
+    
+    #navbar .navbar-toggler {
+        margin-top: 20px;
+        border: 0px;
+        outline: 0px;
+        transform: skewX(0deg);
+        transition: all 0.2s ease-in-out;
+    }
+
+    #navbar .navbar-toggler.collapsed {
+        transform: skewX(-30deg);
+    }
+
+    #navbar .navbar-toggler > .navbar-toggler-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 
     #navbar .navbar-brand img {
@@ -266,8 +296,20 @@ a:hover {
         padding: 7px;
     }
 
+    #navbar .nav-cart {
+        font-size: 2.25rem;
+        vertical-align: middle;
+        margin-right: 10px;
+        position: relative;
+    }
+
     #navbar .nav-cart span {
+        font-size: 1.5rem;
         background-color: #000;
+        margin-left: 0;
+        position: absolute;
+        top: -7px;
+        right: -7px;
     }
 }
 
