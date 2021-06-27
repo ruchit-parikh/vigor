@@ -35,13 +35,17 @@
                         endif;
                     ?>
 
-                    <a href="<?php echo $primary_page_link; ?>" class="vg-btn vg-btn-primary text-uppercase">
-                        <span><?php echo carbon_get_the_post_meta('vg_home_banner_cta_primary_text'); ?></span>
-                    </a>
+                    <?php if (!empty($primary_text = carbon_get_the_post_meta('vg_home_banner_cta_primary_text'))) : ?>
+                        <a href="<?php echo $primary_page_link; ?>" class="vg-btn vg-btn-primary text-uppercase">
+                            <span><?php echo $primary_text; ?></span>
+                        </a>
+                    <?php endif; ?>
 
-                    <a href="<?php echo $secondary_page_link; ?>" class="vg-btn vg-btn-outline-primary text-uppercase">
-                        <span><?php echo carbon_get_the_post_meta('vg_home_banner_cta_secondary_text'); ?></span>
-                    </a>
+                    <?php if (!empty($secondary_text = carbon_get_the_post_meta('vg_home_banner_cta_secondary_text'))) : ?>
+                        <a href="<?php echo $secondary_page_link; ?>" class="vg-btn vg-btn-outline-primary text-uppercase">
+                            <span><?php echo $secondary_text; ?></span>
+                        </a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
