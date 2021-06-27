@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'customs';
+    src:  url('../fonts/customs.eot?fuml5k');
+    src:  url('../fonts/customs.eot?fuml5k#iefix') format('embedded-opentype'),
+        url('../fonts/customs.ttf?fuml5k') format('truetype'),
+        url('../fonts/customs.woff?fuml5k') format('woff'),
+        url('../fonts/customs.svg?fuml5k#customs') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'customs' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.vg-icon-cart:before {
+    content: "\e900";
+}

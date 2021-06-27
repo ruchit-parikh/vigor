@@ -21,7 +21,7 @@
 
 <body <?php body_class(); ?>>
     <header>
-        <nav class="navbar navbar-expand-lg bg-transparent fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-lg bg-transparent vg-bg-nlg-primary fixed-top" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
                     <?php

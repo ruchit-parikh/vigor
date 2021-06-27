@@ -139,10 +139,12 @@ if (!function_exists('vg_enque_assets')) {
         wp_enqueue_style('style', get_stylesheet_uri());
         wp_enqueue_style('bootstrap', get_stylesheet_directory_uri().'/assets/css/bootstrap.min.css', array(), 1.0);
         wp_enqueue_style('main', get_stylesheet_directory_uri().'/assets/css/main.css', array('bootstrap'), time());
+        wp_enqueue_style('icons', get_stylesheet_directory_uri().'/assets/css/icons.css', array('bootstrap'), time());
     
         wp_enqueue_script('jQuery', get_stylesheet_directory_uri().'/assets/js/jQuery.min.js', array (), 1.0);
         wp_enqueue_script('popper', get_stylesheet_directory_uri().'/assets/js/popper.min.js', array ('jQuery'), 1.0);
         wp_enqueue_script('bootstrap', get_stylesheet_directory_uri().'/assets/js/bootstrap.min.js', array ('popper'), 1.0);
+        wp_enqueue_script('main', get_stylesheet_directory_uri().'/assets/js/main.js', array ('bootstrap'), time());
     }
 }
 add_action('wp_enqueue_scripts', 'vg_enque_assets');
@@ -152,24 +154,28 @@ add_action('wp_enqueue_scripts', 'vg_enque_assets');
  * 
  * Woocomerce cart icon
  */
-if (!!function_exists('vg_get_woo_cart_icon')) {
+if (!function_exists('vg_get_woo_cart_icon')) {
     /**
+     * @param array $atts
+     * 
      * @return string|false
      */
-    function vg_get_woo_cart_icon() {
+    function vg_get_woo_cart_icon($atts) {
         ob_start();
         
         $html       = '';
         $cart_count = WC()->cart->cart_contents_count;
         $cart_url   = wc_get_cart_url();
         
-        $html .= '<li><a class="menu-item cart-contents" href="' . $cart_url . '" title="My Cart">';
+        $html .= '<li class="menu-item menu-item-type-custom nav-item d-none d-lg-inline"><a class="nav-link nav-cart" href="' . $cart_url . '" title="My Cart"><i class="vg-icon-cart"></i>';
         
         if ($cart_count > 0) {
             $html .= '<span class="cart-contents-count">' . $cart_count . '</span>';
         }
 
         $html .= '</a></li>';
+
+        echo $html;
 	        
         return ob_get_clean();
     }
