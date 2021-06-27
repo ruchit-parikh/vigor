@@ -1,7 +1,19 @@
 @font-face {
     font-family: "vigor";
-    src: url('../fonts/ibm-plex-medium.ttf');
+    src: url('../fonts/ibm-plex-light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "vigor";
+    src: url('../fonts/ibm-plex-regular.ttf');
     font-weight: 400;
+}
+
+@font-face {
+    font-family: "vigor";
+    src: url('../fonts/ibm-plex-medium.ttf');
+    font-weight: 500;
 }
 
 @font-face {
@@ -14,13 +26,6 @@
     font-family: "vigor";
     src: url('../fonts/ibm-plex-bold.ttf');
     font-weight: 700;
-}
-
-@font-face {
-    font-family: "vigor";
-    src: url('../fonts/ibm-plex-bold-italic.ttf');
-    font-weight: 700;
-    font-style: italic;
 }
 
 html,
