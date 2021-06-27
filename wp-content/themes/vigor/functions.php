@@ -167,7 +167,7 @@ if (!function_exists('vg_get_woo_cart_icon')) {
         $cart_count = WC()->cart->cart_contents_count;
         $cart_url   = wc_get_cart_url();
         
-        $html .= '<li class="menu-item menu-item-type-custom nav-item d-none d-lg-inline"><a class="nav-link nav-cart" href="' . $cart_url . '" title="My Cart"><i class="vg-icon-cart"></i>';
+        $html .= '<li class="menu-item menu-item-type-custom nav-item nav-cart d-none d-lg-inline"><a class="nav-link" href="' . $cart_url . '" title="My Cart"><i class="vg-icon-cart"></i>';
         
         if ($cart_count > 0) {
             $html .= '<span class="cart-contents-count">' . $cart_count . '</span>';
