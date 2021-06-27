@@ -312,6 +312,15 @@ a:hover {
         top: -7px;
         right: -7px;
     }
+
+    #navbar .nav-link {
+        color: #000;
+    }
+
+    #navbar .nav-item:hover::after,
+    #navbar .nav-item.active::after {
+        background-color: #000;
+    }
 }
 
 /** patch to fix navbar overlay issue when logged in */
