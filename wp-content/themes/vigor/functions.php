@@ -156,11 +156,9 @@ add_action('wp_enqueue_scripts', 'vg_enque_assets');
  */
 if (!function_exists('vg_get_woo_cart_icon')) {
     /**
-     * @param array $atts
-     * 
      * @return string|false
      */
-    function vg_get_woo_cart_icon($atts) {
+    function vg_get_woo_cart_icon() {
         ob_start();
         
         $html       = '';

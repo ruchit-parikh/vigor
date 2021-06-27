@@ -41,7 +41,7 @@ class HomePageOptions
                     )),
 
                 Field::make('separator', 'vg_home_featured_section', __('Featured Descriptions')),
-                Field::make('text', 'vg_home_featured_section_title', __('Title')),
+                Field::make('text', 'vg_home_featured_section_title', __('Title'))->set_required(),
                 Field::make('rich_text', 'vg_home_featured_section_description', __('Description')),
             ));
     }
