@@ -100,6 +100,11 @@ h2 {
     font-size: 3.5rem;
 }
 
+p {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+}
+
 a {
     color: #fed130;
     text-decoration: none;
@@ -140,10 +145,6 @@ a:hover {
     .vg-bg-nlg-primary {
         background-color: #fed130 !important;
     }
-}
-
-.font-12 {
-    font-size: 1.2rem;
 }
 
 /** Buttons **/

@@ -57,7 +57,7 @@
                 </h2>
             </div>
             <div class="col-lg-6">
-                <div class="font-12 my-3">
+                <div class="my-3">
                     <?php echo wpautop(carbon_get_the_post_meta('vg_home_featured_section_description')); ?>
                 </div>
             </div>
