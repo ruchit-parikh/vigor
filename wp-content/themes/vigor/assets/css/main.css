@@ -240,6 +240,10 @@ a:hover {
     display: inline-block !important;
 }
 
+#navbar.scrolled .nav-cart span {
+    background-color: #000;
+}
+
 @media screen and (max-width: 991px) {
     #navbar.vg-bg-nlg-primary {
         box-shadow: 0px 1px 10px #000c;
@@ -260,6 +264,10 @@ a:hover {
 
     #navbar .navbar-collapse li {
         padding: 7px;
+    }
+
+    #navbar .nav-cart span {
+        background-color: #000;
     }
 }
 
@@ -289,6 +297,7 @@ a:hover {
 @media screen and (max-width: 991px) and (max-height: 499px) {
     #home-banner {
         align-items: flex-end;
+        margin-top: 15px;
     }
 }
 
