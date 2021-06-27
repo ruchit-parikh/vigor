@@ -337,7 +337,13 @@ a:hover {
 
 /** patch to fix navbar overlay issue when logged in */
 .logged-in #navbar {
-    margin-top: 44px;
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 767px) {
+    .logged-in #navbar {
+        margin-top: 44px;
+    }
 }
 
 @media screen and (max-width: 600px) {
