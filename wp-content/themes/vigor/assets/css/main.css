@@ -254,6 +254,7 @@ a:hover {
 #navbar.scrolled .nav-item:hover::after,
 #navbar.scrolled .nav-item.active::after {
     background-color: #000;
+    color: #fff;
 }
 
 @media screen and (max-width: 991px) {
