@@ -174,7 +174,7 @@ if (!!function_exists('vg_get_woo_cart_icon')) {
         return ob_get_clean();
     }
 }
-add_shortcode('vg_woo_cart_icon', 'vg_get_woo_cart_icon');
+add_shortcode('vg_get_woo_cart_icon', 'vg_get_woo_cart_icon');
 
 if (!function_exists('vg_woo_cart_ajax')) {
     /**
@@ -198,7 +198,7 @@ if (!function_exists('vg_get_woo_cart_icon_menu')) {
      * @return string
      */
     function vg_get_woo_cart_icon_menu($items, $args) {
-        $items .= do_shortcode("[vg_woo_cart_icon]");
+        $items .= do_shortcode("[vg_get_woo_cart_icon]");
 
         return $items;
     }
