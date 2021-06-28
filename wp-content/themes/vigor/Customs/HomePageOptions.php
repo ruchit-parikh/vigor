@@ -43,6 +43,27 @@ class HomePageOptions
                 Field::make('separator', 'vg_home_featured_section', __('Featured Descriptions')),
                 Field::make('text', 'vg_home_featured_section_title', __('Title'))->set_required(),
                 Field::make('rich_text', 'vg_home_featured_section_description', __('Description')),
+
+                Field::make('separator', 'vg_home_coaches_section', __('Coaches Overview')),
+                Field::make('text', 'vg_home_coaches_section_title', __('Title')),
+                Field::make('rich_text', 'vg_home_coaches_section_subtitle', __('Tag Line')),
+                Field::make('association', 'vg_home_coaches_section_coaches', __('Select Coaches to Show On Slider'))
+                    ->set_types(array(
+                        array(
+                            'type'      => 'post',
+                            'post_type' => 'coach',
+                        ),
+                    )),
+                Field::make('text', 'vg_home_coaches_section_cta_text', __('Coache Overview Link Text')),
+                Field::make('select', 'vg_home_coaches_section_cta_link', __('Coache Overview Link Page'))
+                    ->set_options($pages),
+                Field::make('text', 'vg_home_coaches_section_cta_link_url', __('Coache Overview Link Url'))
+                    ->set_conditional_logic(array(
+                        array(
+                            'field' => 'vg_home_coaches_section_cta_link',
+                            'value' => '-1',
+                        )
+                    )),
             ));
     }
 

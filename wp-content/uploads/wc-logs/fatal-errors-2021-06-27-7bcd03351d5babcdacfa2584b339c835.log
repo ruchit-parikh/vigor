@@ -1,0 +1,722 @@
+2021-06-27T09:03:26+00:00 CRITICAL Uncaught Error: Call to undefined function vg_get_woo_cart_icon() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:201
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_get_woo_cart_icon_menu()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-includes/nav-menu-template.php(270): apply_filters()
+#3 /var/www/html/vigor/wp-content/themes/vigor/header.php(54): wp_nav_menu()
+#4 /var/www/html/vigor/wp-includes/template.php(730): require_once('/var/www/html/v...')
+#5 /var/www/html/vigor/wp-includes/template.php(676): load_template()
+#6 /var/www/html/vigor/wp-includes/general-template.php(48): locate_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(2): get_header()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#10 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+# in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 201
+
+2021-06-27T09:03:28+00:00 CRITICAL Uncaught Error: Call to undefined function vg_get_woo_cart_icon() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:201
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_get_woo_cart_icon_menu()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-includes/nav-menu-template.php(270): apply_filters()
+#3 /var/www/html/vigor/wp-content/themes/vigor/header.php(54): wp_nav_menu()
+#4 /var/www/html/vigor/wp-includes/template.php(730): require_once('/var/www/html/v...')
+#5 /var/www/html/vigor/wp-includes/template.php(676): load_template()
+#6 /var/www/html/vigor/wp-includes/general-template.php(48): locate_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(2): get_header()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#10 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+# in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 201
+
+2021-06-27T09:03:29+00:00 CRITICAL Uncaught Error: Call to undefined function vg_get_woo_cart_icon() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:201
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_get_woo_cart_icon_menu()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-includes/nav-menu-template.php(270): apply_filters()
+#3 /var/www/html/vigor/wp-content/themes/vigor/header.php(54): wp_nav_menu()
+#4 /var/www/html/vigor/wp-includes/template.php(730): require_once('/var/www/html/v...')
+#5 /var/www/html/vigor/wp-includes/template.php(676): load_template()
+#6 /var/www/html/vigor/wp-includes/general-template.php(48): locate_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(2): get_header()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#10 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+# in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 201
+
+2021-06-27T09:03:32+00:00 CRITICAL Uncaught Error: Call to undefined function vg_get_woo_cart_icon() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:201
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_get_woo_cart_icon_menu()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-includes/nav-menu-template.php(270): apply_filters()
+#3 /var/www/html/vigor/wp-content/themes/vigor/header.php(54): wp_nav_menu()
+#4 /var/www/html/vigor/wp-includes/template.php(730): require_once('/var/www/html/v...')
+#5 /var/www/html/vigor/wp-includes/template.php(676): load_template()
+#6 /var/www/html/vigor/wp-includes/general-template.php(48): locate_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(2): get_header()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#10 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+# in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 201
+
+2021-06-27T09:12:10+00:00 CRITICAL syntax error, unexpected '$items' (T_VARIABLE), expecting ';' or ',' in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 204
+
+2021-06-27T11:14:17+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:14:21+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:15:02+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:15:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:15:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:15:22+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:15:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:17:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:18:43+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:18:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:18:58+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:19:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:20:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:20:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:21:39+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:21:40+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:21:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:23:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:25:23+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:25:25+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:25:25+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:25:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:25:27+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:25:34+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:26:25+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:26:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:26:30+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:28:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T11:28:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T13:22:09+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T13:53:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T13:53:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T13:53:57+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T13:53:59+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T13:54:06+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T13:59:25+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T14:06:14+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T14:06:14+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T14:06:27+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T15:19:09+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T15:19:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T15:19:54+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T15:21:57+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T15:47:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T15:47:55+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T16:05:05+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T16:11:05+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T16:12:04+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T16:12:13+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T16:28:08+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T16:28:16+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T16:28:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T16:30:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T16:31:08+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+
+2021-06-27T16:31:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_get_woo_cart_icon(), 0 passed in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 192 and exactly 1 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:163
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(192): vg_get_woo_cart_icon()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#2 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#6 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#7 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 163
+

@@ -1,6 +1,7 @@
 <?php
 
 use Carbon_Fields\Carbon_Fields;
+use Customs\CPTCoach;
 use Customs\HomePageOptions;
 use Customs\ThemeSettings;
 
@@ -12,6 +13,7 @@ use Customs\ThemeSettings;
 if (!function_exists('vg_get_all_custom_fields')) {
     function vg_get_all_custom_fields(): array {
         return array(
+            CPTCoach::class,
             ThemeSettings::class,
             HomePageOptions::class,
         );

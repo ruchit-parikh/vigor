@@ -112,6 +112,7 @@ a {
 
 a:hover {
     color: #000;
+    text-decoration: none;
 }
 
 ::-moz-selection {
@@ -412,4 +413,54 @@ a:hover {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
+}
+
+#coaches .author {
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+#coaches .description p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#coaches .view-all-link {
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+    margin-top: -75px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#coaches .view-all-link:hover {
+    color: #fff;
+}
+
+#coaches .carousel-caption {
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 575px) {
+    #coaches .view-all-link {
+        margin-top: -55px;
+    }
+
+    #coaches .carousel-caption {
+        padding-bottom: 36px;
+    }
+}
+
+.carousel.slide .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
 }

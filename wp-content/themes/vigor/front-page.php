@@ -69,4 +69,64 @@
     </div>
 </section>
 
+<?php if (!empty($coaches = carbon_get_the_post_meta('vg_home_coaches_section_coaches'))) : ?>
+    <section id="coaches">
+        <div id="coaches-slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <?php foreach ($coaches as $key => $coach) : ?>
+                    <li data-target="#coaches-slider" data-slide-to="<?php echo $key; ?>" class="<?php echo $key === 0 ? 'active' : ''; ?>"></li>
+                <?php endforeach; ?>
+            </ol>
+
+            <div class="carousel-inner">
+                <?php foreach ($coaches as $key => $coach) : ?>
+                    <div class="carousel-item <?php echo $key === 0 ? 'active' : ''; ?>">
+                        <?php 
+                            $coach_post      = get_post($coach['id']);
+                            $coach_image_url = wp_get_attachment_image_src(get_post_thumbnail_id($coach_post), 'full')[0];
+                            $coach_title     = get_the_title($coach_post->ID);
+                        ?>
+
+                        <img class="d-block w-100 mx-auto" src="<?php echo $coach_image_url; ?>" alt="<?php echo $coach_title; ?>">
+                        <div class="carousel-caption">
+                            <h4 class="author">
+                                <?php echo $coach_title; ?>
+                            </h4>
+                            <div class="description">
+                                <?php echo apply_filters('the_content', $coach_post->post_content); ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <?php if (!empty($link_text = carbon_get_the_post_meta('vg_home_coaches_section_cta_text'))): ?>
+                <?php 
+                    $link_url     = '#';
+                    $link_page_id = carbon_get_the_post_meta('vg_home_coaches_section_cta_link');
+
+                    if (-1 === $link_page_id) : 
+                        $link_url = carbon_get_the_post_meta('vg_home_coaches_section_cta_link_url');
+                    else :
+                        $link_url = get_page_link($link_page_id);
+                    endif;
+                ?>
+
+                <a class="text-uppercase view-all-link" href="<?php echo $link_url; ?>">
+                    <?php echo $link_text; ?>
+                </a>
+            <?php endif; ?>
+            
+            <a class="carousel-control-prev" href="#coaches-slider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#coaches-slider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+<?php endif; ?>
+
 <?php get_footer(); ?>
