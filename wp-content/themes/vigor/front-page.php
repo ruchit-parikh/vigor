@@ -138,4 +138,49 @@
     </section>
 <?php endif; ?>
 
+<?php if (!empty($plans = carbon_get_the_post_meta('vg_home_plans_section_plans'))): ?>
+    <section id="plans-overview" class="py-5">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-12">
+                    <h2 class="text-center">
+                        <?php echo carbon_get_the_post_meta('vg_home_plans_section_title'); ?>
+                    </h2>
+                </div>
+            </div>
+            <div class="row row-eq-height py-4">
+                <?php foreach ($plans as $key => $plan): ?>
+                    <div class="col-lg-4 mb-5">
+                        <div class="plan">
+                            <h3 class="text-uppercase font-style-normal">
+                                <?php echo $plan['name']; ?>
+                            </h3>
+                            <ul class="features">
+                                <?php foreach ($plan['features'] as $feature): ?>
+                                    <li>
+                                        <span>
+                                            <?php echo $feature['title']; ?>
+                                        </span>
+                                        <i class="vg-check"></i>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+
+                            <div class="text-center">
+                                <?php if (!empty($plan['btn_text'])): ?>
+                                    <a href="<?php echo $plan['btn_url']; ?>" class="vg-btn vg-btn-primary">
+                                        <span>
+                                            <?php echo $plan['btn_text']; ?>
+                                        </span>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
+
 <?php get_footer(); ?>
