@@ -83,6 +83,8 @@ class HomePageOptions
                         Field::make('text', 'btn_text', __('Price Button Text')),
                         Field::make('text', 'btn_link', __('Price Button Link')),
                     ))
+                    ->set_min(3)
+                    ->set_max(3)
                     ->set_header_template('
                         <% if (name) { %>
                             <%- name %>
