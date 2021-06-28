@@ -2,3 +2,17 @@
 
 2021-06-28T05:52:29+00:00 CRITICAL syntax error, unexpected 'Field' (T_STRING), expecting ')' in /var/www/html/vigor/wp-content/themes/vigor/Customs/HomePageOptions.php on line 51
 
+2021-06-28T16:54:15+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Carbon_Fields\Field\Field::factory(), 1 passed and at least 2 expected in /var/www/html/vigor/wp-content/themes/vigor/vendor/htmlburger/carbon-fields/core/Field/Field.php:216
+Stack trace:
+#0 [internal function]: Carbon_Fields\Field\Field::factory()
+#1 /var/www/html/vigor/wp-content/themes/vigor/vendor/htmlburger/carbon-fields/core/Field.php(46): call_user_func_array()
+#2 [internal function]: Carbon_Fields\Field::factory()
+#3 /var/www/html/vigor/wp-content/themes/vigor/vendor/htmlburger/carbon-fields/core/Field.php(56): call_user_func_array()
+#4 /var/www/html/vigor/wp-content/themes/vigor/Customs/HomePageOptions.php(70): Carbon_Fields\Field::make()
+#5 /var/www/html/vigor/wp-content/themes/vigor/functions.php(105): Customs\HomePageOptions->register()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_attach_theme_options()
+#7 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#8 /var/www/html/vigor/wp-includes/pl in /var/www/html/vigor/wp-content/themes/vigor/vendor/htmlburger/carbon-fields/core/Field/Field.php on line 216
+
+2021-06-28T16:59:18+00:00 CRITICAL syntax error, unexpected ',', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/www/html/vigor/wp-content/themes/vigor/Customs/HomePageOptions.php on line 77
+
