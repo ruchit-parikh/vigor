@@ -168,7 +168,7 @@
 
                             <div class="text-center">
                                 <?php if (!empty($plan['btn_text'])): ?>
-                                    <a href="<?php echo $plan['btn_url']; ?>" class="vg-btn vg-btn-primary">
+                                    <a href="<?php echo $plan['btn_link']; ?>" class="vg-btn vg-btn-primary">
                                         <span>
                                             <?php echo $plan['btn_text']; ?>
                                         </span>
