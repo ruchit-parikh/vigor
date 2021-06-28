@@ -567,5 +567,6 @@ a:hover {
 @media screen and (max-width: 991px) {
     #plans-overview .features {
         min-height: 0px;
+        margin-bottom: 40px;
     }
 }
