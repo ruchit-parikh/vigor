@@ -558,6 +558,12 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 1199px) {
+    #plans-overview .plan {
+        padding: 30px 35px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     #plans-overview .features {
         min-height: 0px;
