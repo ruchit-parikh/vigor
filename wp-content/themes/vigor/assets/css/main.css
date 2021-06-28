@@ -541,6 +541,14 @@ a:hover {
     width: 75%;
 }
 
+ul > li:nth-child(n + 4) .vg-check::before {
+    color: #f27a30;
+}
+
+ul > li:nth-child(n + 6) .vg-check::before {
+    color: #b63222;
+}
+
 @media screen and (min-width: 992px) {
     #plans-overview .col-lg-4:nth-child(2) {
         transform: scale(1.1);
