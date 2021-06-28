@@ -415,6 +415,36 @@ a:hover {
     }
 }
 
+.carousel.slide .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.carousel.slide .carousel-control-next-icon,
+.carousel.slide .carousel-control-prev-icon {
+    background-image: url('../images/carousel-left.svg');
+    width: 35px;
+    height: 35px;
+}
+
+.carousel.slide .carousel-control-next-icon {
+    transform: rotate(180deg);
+}
+
+/** align carousel arrows with container from width greater than 1140px */
+@media screen and (min-width: 1311px) {
+    .carousel.slide .carousel-control-next {
+        right: calc(50vw - 570px - 6%);
+    }
+
+    .carousel.slide .carousel-control-prev {
+        left: calc(50vw - 570px - 6%);
+    }
+}
+
 #coaches .author {
     font-style: normal;
     font-size: 1.3rem;
@@ -447,6 +477,23 @@ a:hover {
     padding-bottom: 80px;
 }
 
+#coaches .carousel-header {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50px;
+    text-align: center;
+    z-index: 99;
+}
+
+#coaches .carousel-header p {
+    line-height: 1.75;
+}
+
+#coaches .carousel.slide img {
+    min-height: 300px;
+}
+
 @media screen and (max-width: 575px) {
     #coaches .view-all-link {
         margin-top: -55px;
@@ -455,12 +502,8 @@ a:hover {
     #coaches .carousel-caption {
         padding-bottom: 36px;
     }
-}
 
-.carousel.slide .carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-left: 10px;
+    #coaches .carousel-header {
+        top: 25px;
+    }
 }

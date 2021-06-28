@@ -78,6 +78,15 @@
                 <?php endforeach; ?>
             </ol>
 
+            <div class="container carousel-header">
+                <h2 class="text-light text-center">
+                    <?php echo carbon_get_the_post_meta('vg_home_coaches_section_title'); ?>
+                </h2>
+                <div class="text-light h3 text-center">
+                    <?php echo wpautop(carbon_get_the_post_meta('vg_home_coaches_section_subtitle')); ?>
+                </div>
+            </div>
+
             <div class="carousel-inner">
                 <?php foreach ($coaches as $key => $coach) : ?>
                     <div class="carousel-item <?php echo $key === 0 ? 'active' : ''; ?>">
