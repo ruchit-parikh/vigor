@@ -64,6 +64,30 @@ class HomePageOptions
                             'value' => '-1',
                         )
                     )),
+
+                Field::make('separator', 'vg_home_plans_section', __('Plans Overview')),
+                Field::make('text', 'vg_home_plans_section_title', __('Title')),
+                Field::make('complex', 'vg_home_plans_section_plans', __('Plans'))
+                    ->add_fields(array(
+                        Field::make('text', 'name', __('Plan Name'))->set_required(),
+                        Field::make('complex', 'features', __('What it offers?'))
+                            ->add_fields(array(
+                                Field::make('text', 'title', __('Feature'))->set_required()
+                            ))
+                            ->set_min(1)
+                            ->set_header_template('
+                                <% if (title) { %>
+                                    <%- title %>
+                                <% } %>
+                            '),
+                        Field::make('text', 'btn_text', __('Price Button Text')),
+                        Field::make('text', 'btn_link', __('Price Button Link')),
+                    ))
+                    ->set_header_template('
+                        <% if (name) { %>
+                            <%- name %>
+                        <% } %>
+                    '),
             ));
     }
 
