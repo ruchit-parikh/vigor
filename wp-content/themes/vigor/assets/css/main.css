@@ -95,6 +95,7 @@ body {
     font-weight: 400;
     background-color: #fff;
     font-size: 14px;
+    color: #000;
 }
 
 @media screen and (max-width: 991px) {
@@ -201,6 +202,14 @@ a:hover {
 
 .vg-text-secondary {
     color: #000000 !important;
+}
+
+.vg-bg-primary * {
+    color: #000;
+}
+
+.vg-bg-secondary * {
+    color: #fff;
 }
 
 @media screen and (max-width: 991px) {
@@ -635,5 +644,43 @@ ul > li:nth-child(n + 6) .vg-check::before {
     #plans-overview .features {
         min-height: 0px;
         margin-bottom: 40px;
+    }
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-style: normal;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer ul.menu {
+    list-style: none;
+    padding-left: 0px;
+}
+
+footer ul.menu li {
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+footer ul.menu li a,
+footer .textwidget p {
+    color: #808080;
+    font-weight: 500;
+}
+
+footer ul.menu li:hover a {
+    color: #fed130;
+}
+
+@media screen and (max-width: 575px) {
+    footer {
+        text-align: center;
     }
 }

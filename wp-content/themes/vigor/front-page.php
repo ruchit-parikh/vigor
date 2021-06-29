@@ -56,7 +56,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h2 class="vg-text-secondary my-3">
+                <h2 class="my-3">
                     <?php echo carbon_get_the_post_meta('vg_home_featured_section_title'); ?>
                 </h2>
             </div>
