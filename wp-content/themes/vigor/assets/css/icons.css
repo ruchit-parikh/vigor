@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'customs';
-    src:  url('../fonts/customs.eot?cjc255');
-    src:  url('../fonts/customs.eot?cjc255#iefix') format('embedded-opentype'),
-        url('../fonts/customs.ttf?cjc255') format('truetype'),
-        url('../fonts/customs.woff?cjc255') format('woff'),
-        url('../fonts/customs.svg?cjc255#customs') format('svg');
+    src:  url('../fonts/customs/customs.eot?cjc255');
+    src:  url('../fonts/customs/customs.eot?cjc255#iefix') format('embedded-opentype'),
+        url('../fonts/customs/customs.ttf?cjc255') format('truetype'),
+        url('../fonts/customs/customs.woff?cjc255') format('woff'),
+        url('../fonts/customs/customs.svg?cjc255#customs') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
