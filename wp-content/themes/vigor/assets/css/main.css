@@ -806,9 +806,8 @@ footer ul.menu li:hover a {
     }
 }
 
-#newsletter #newsletter-form .wpcf7 form .wpcf7-response-output {
+#newsletter #newsletter-form .wpcf7-form .wpcf7-response-output {
     width: fit-content;
-    display: block;
     margin: auto;
     font-weight: 500;
     padding: 0 20%;
@@ -823,6 +822,7 @@ footer ul.menu li:hover a {
 #newsletter #newsletter-form .wpcf7-form.failed .wpcf7-response-output {
     color: #b63222;
     border-color: #b63222;
+    display: block;
 }
 
 #newsletter #newsletter-form .wpcf7-not-valid-tip { 
@@ -835,4 +835,5 @@ footer ul.menu li:hover a {
 #newsletter #newsletter-form form.sent .wpcf7-response-output {
     border-color: #17a224;
     color: #17a224;
+    display: block;
 }
