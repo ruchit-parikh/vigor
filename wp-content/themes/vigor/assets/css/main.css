@@ -806,6 +806,14 @@ footer ul.menu li:hover a {
     }
 }
 
+#newsletter #news-letter-form .wpcf7 form .wpcf7-response-output {
+    width: fit-content;
+    display: block;
+    margin: auto;
+    font-weight: 500;
+    padding: 0 20%;
+}
+
 #newsletter #newsletter-form .wpcf7-form.invalid .vg-btn {
     margin-bottom: 2rem;
 }
@@ -813,13 +821,8 @@ footer ul.menu li:hover a {
 #newsletter #newsletter-form .wpcf7-form.invalid .wpcf7-response-output,
 #newsletter #newsletter-form .wpcf7-form.spam .wpcf7-response-output,
 #newsletter #newsletter-form .wpcf7-form.failed .wpcf7-response-output {
-    width: fit-content;
-    display: block;
-    margin: auto;
     color: #b63222;
     border-color: #b63222;
-    font-weight: 500;
-    padding: 0 20%;
 }
 
 #newsletter #newsletter-form .wpcf7-not-valid-tip { 
@@ -827,4 +830,9 @@ footer ul.menu li:hover a {
     color: #b63222;
     margin-top: 8px;
     font-weight: 500;
+}
+
+#newsletter #news-letter-form .wpcf7 form.sent .wpcf7-response-output {
+    border-color: #17a224;
+    color: #17a224;
 }
