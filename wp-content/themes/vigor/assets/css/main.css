@@ -756,9 +756,14 @@ footer ul.menu li:hover a {
 }
 
 #newsletter #newsletter-form .vg-btn {
-    margin-left: 10px;
     margin-bottom: 0px;
     padding: 15px 80px;
+}
+
+@media screen and (min-width: 768px) {
+    #newsletter #newsletter-form .vg-btn {
+        margin-left: 10px;
+    }
 }
 
 #newsletter #newsletter-form .wpcf7-form.invalid .vg-btn {
