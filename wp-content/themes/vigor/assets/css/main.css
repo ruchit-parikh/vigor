@@ -806,7 +806,7 @@ footer ul.menu li:hover a {
     }
 }
 
-#newsletter #news-letter-form .wpcf7 form .wpcf7-response-output {
+#newsletter #newsletter-form .wpcf7 form .wpcf7-response-output {
     width: fit-content;
     display: block;
     margin: auto;
@@ -832,7 +832,7 @@ footer ul.menu li:hover a {
     font-weight: 500;
 }
 
-#newsletter #news-letter-form form.sent .wpcf7-response-output {
+#newsletter #newsletter-form form.sent .wpcf7-response-output {
     border-color: #17a224;
     color: #17a224;
 }
