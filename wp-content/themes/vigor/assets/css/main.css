@@ -231,14 +231,22 @@ a:hover {
     font-weight: 600;
     border-radius: 0px;
     padding: 10px 25px;
-    transform: skewX(-10deg);
     border: 2px solid #fff;
     margin-bottom: 1rem;
+    -moz-transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+    transform: skewX(-10deg);
 }
 
 .vg-btn span {
-    transform: skewX(10deg);
     display: inline-block;
+    -moz-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    -ms-transform: skewX(10deg);
+    -o-transform: skewX(10deg);
+    transform: skewX(10deg);
 }
 
 .vg-btn.vg-btn-primary {
@@ -253,11 +261,21 @@ a:hover {
     color: #fed130;
 }
 
-.vg-btn:hover {
+.vg-bg-primary .vg-btn.vg-btn-outline-primary {
+    color: #000;
+    border-color: #fff;
+}
+
+.vg-btn:hover,
+.vg-bg-primary .vg-btn.vg-btn-outline-primary:hover {
     background-color: #000;
     border-color: #000;
     color: #fff;
     transition: all 0.2s ease-in-out;
+}
+
+.vg-bg-primary .vg-btn.vg-btn-outline-primary:hover span {
+    color: #fff;
 }
 
 .vg-btn-group {
@@ -360,11 +378,19 @@ a:hover {
         margin-top: 10px;
         border: 0px;
         outline: 0px;
-        transform: skewX(0deg);
         transition: all 0.2s ease-in-out;
+        -moz-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+        transform: skewX(0deg);
     }
 
     #navbar .navbar-toggler.collapsed {
+        -moz-transform: skewX(-30deg);
+        -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+        -o-transform: skewX(-30deg);
         transform: skewX(-30deg);
     }
 
@@ -503,6 +529,10 @@ a:hover {
 }
 
 .carousel.slide .carousel-control-next-icon {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -619,10 +649,14 @@ ul > li:nth-child(n + 6) .vg-check::before {
 
 @media screen and (min-width: 992px) {
     #plans-overview .col-lg-4:nth-child(2) {
-        transform: scale(1.1);
         background-color: #fff;
         z-index: 99;
         box-shadow: 0px 0px 20px #00000040;
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
     }
     
     #plans-overview .col-lg-4:nth-child(2) .plan {
@@ -630,6 +664,10 @@ ul > li:nth-child(n + 6) .vg-check::before {
     }
 
     #plans-overview .col-lg-4:nth-child(2) .vg-btn {
+        -moz-transform: skewX(-10deg) translateY(-25%);
+        -webkit-transform: skewX(-10deg) translateY(-25%);
+        -ms-transform: skewX(-10deg) translateY(-25%);
+        -o-transform: skewX(-10deg) translateY(-25%);
         transform: skewX(-10deg) translateY(-25%);
     }
 }
@@ -683,4 +721,65 @@ footer ul.menu li:hover a {
     footer {
         text-align: center;
     }
+}
+
+#newsletter .subtitle {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 15px 0;
+    display: block;
+}
+
+#newsletter #newsletter-form input[type="text"],
+#newsletter #newsletter-form input[type="email"],
+#newsletter #newsletter-form input[type="number"] {
+    padding: 25px;
+    border-radius: 0px;
+    border-color: #fff;
+    color: #000;
+    -moz-transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+}
+
+#newsletter #newsletter-form input[type="text"]::placeholder,
+#newsletter #newsletter-form input[type="email"]::placeholder,
+#newsletter #newsletter-form input[type="number"]::placeholder {
+    color: #0a0a0a;
+    -moz-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    -ms-transform: skewX(10deg);
+    -o-transform: skewX(10deg);
+    transform: skewX(10deg);
+}
+
+#newsletter #newsletter-form .vg-btn {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding: 15px 80px;
+}
+
+#newsletter #newsletter-form .wpcf7-form.invalid .vg-btn {
+    margin-bottom: 2rem;
+}
+
+#newsletter #newsletter-form .wpcf7-form.invalid .wpcf7-response-output,
+#newsletter #newsletter-form .wpcf7-form.spam .wpcf7-response-output,
+#newsletter #newsletter-form .wpcf7-form.failed .wpcf7-response-output {
+    width: fit-content;
+    display: block;
+    margin: auto;
+    color: #b63222;
+    border-color: #b63222;
+    font-weight: 500;
+    padding: 0 20%;
+}
+
+#newsletter #newsletter-form .wpcf7-not-valid-tip { 
+    text-align: left;
+    color: #b63222;
+    margin-top: 8px;
+    font-weight: 500;
 }

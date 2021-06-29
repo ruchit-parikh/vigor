@@ -90,6 +90,12 @@ class HomePageOptions
                             <%- name %>
                         <% } %>
                     '),
+
+                Field::make('separator', 'vg_home_newsletter_section', __('Newsletter')),
+                Field::make('text', 'vg_home_newsletter_section_title', __('Title')),
+                Field::make('text', 'vg_home_newsletter_section_subtitle', __('Subtitle')),
+                Field::make('text', 'vg_home_newsletter_section_form_shortcode', __('Newsletter Form Shortcode')),
+                Field::make('text', 'vg_home_newsletter_section_form_caption', __('Newsletter Form Caption')),
             ));
     }
 
