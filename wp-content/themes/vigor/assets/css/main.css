@@ -832,7 +832,7 @@ footer ul.menu li:hover a {
     font-weight: 500;
 }
 
-#newsletter #news-letter-form .wpcf7 form.sent .wpcf7-response-output {
+#newsletter #news-letter-form form.sent .wpcf7-response-output {
     border-color: #17a224;
     color: #17a224;
 }
