@@ -1,31 +1,92 @@
 @font-face {
     font-family: "vigor";
-    src: url('../fonts/ibm-plex-light.ttf');
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-extra-light.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "vigor";
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-extra-light-italic.ttf');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "vigor";
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-light.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "vigor";
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-light-italic.ttf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "vigor";
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-thin.ttf');
     font-weight: 300;
 }
 
 @font-face {
     font-family: "vigor";
-    src: url('../fonts/ibm-plex-regular.ttf');
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-thin-italic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "vigor";
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-regular.ttf');
     font-weight: 400;
 }
 
 @font-face {
     font-family: "vigor";
-    src: url('../fonts/ibm-plex-medium.ttf');
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "vigor";
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-medium.ttf');
     font-weight: 500;
 }
 
 @font-face {
     font-family: "vigor";
-    src: url('../fonts/ibm-plex-semi-bold.ttf');
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-medium-italic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "vigor";
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-semi-bold.ttf');
     font-weight: 600;
 }
 
 @font-face {
     font-family: "vigor";
-    src: url('../fonts/ibm-plex-bold.ttf');
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-semi-bold-italic.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "vigor";
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-bold.ttf');
     font-weight: 700;
+}
+
+@font-face {
+    font-family: "vigor";
+    src: url('../fonts/ibm-plex-sans/ibm-plex-sans-bold-italic.ttf');
+    font-weight: 700;
+    font-style: italic;
 }
 
 html,
