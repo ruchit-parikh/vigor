@@ -182,9 +182,49 @@ a:hover {
     color: #000000;
 }
 
+::-webkit-selection {
+    background-color: #fed130;
+    color: #000000;
+}
+
+::-ms-selection {
+    background-color: #fed130;
+    color: #000000;
+}
+
+::-o-selection {
+    background-color: #fed130;
+    color: #000000;
+}
+
 ::selection {
     background-color: #fed130;
     color: #000000;
+}
+
+.vg-bg-primary *::-moz-selection {
+    background-color: #000;
+    color: #fed130;
+}
+
+.vg-bg-primary *::-webkit-selection {
+    background-color: #000;
+    color: #fed130;
+}
+
+.vg-bg-primary *::-ms-selection {
+    background-color: #000;
+    color: #fed130;
+}
+
+.vg-bg-primary *::-o-selection {
+    background-color: #000;
+    color: #fed130;
+}
+
+.vg-bg-primary *::selection {
+    background-color: #000;
+    color: #fed130;
 }
 
 /** Utilities */
