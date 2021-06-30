@@ -7,13 +7,17 @@
 <section id="home-banner" style="background-image: url(<?php echo $banner_image_url; ?>)">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                 <div class="heading">
                     <h1 class="vg-text-primary"><?php echo carbon_get_the_post_meta('vg_home_banner_header'); ?></h1>
-                    <span class="text-light h3">
+                    <span class="text-light h3 font-weight-600">
                         <?php echo carbon_get_the_post_meta('vg_home_banner_subheader'); ?>
                     </span>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
                 <div class="vg-btn-group">
                     <?php
                         $primary_page_link = '#';
@@ -54,16 +58,14 @@
 
 <section id="featured-description">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row my-4">
             <div class="col-lg-6">
-                <h2 class="my-3">
+                <h2>
                     <?php echo carbon_get_the_post_meta('vg_home_featured_section_title'); ?>
                 </h2>
             </div>
             <div class="col-lg-6">
-                <div class="my-3">
-                    <?php echo wpautop(carbon_get_the_post_meta('vg_home_featured_section_description')); ?>
-                </div>
+                <?php echo wpautop(carbon_get_the_post_meta('vg_home_featured_section_description')); ?>
             </div>
         </div>
     </div>
@@ -82,7 +84,7 @@
                 <h2 class="text-light text-center">
                     <?php echo carbon_get_the_post_meta('vg_home_coaches_section_title'); ?>
                 </h2>
-                <div class="text-light h3 text-center">
+                <div class="text-light font-weight-500 text-center">
                     <?php echo wpautop(carbon_get_the_post_meta('vg_home_coaches_section_subtitle')); ?>
                 </div>
             </div>
@@ -141,8 +143,8 @@
 <?php if (!empty($plans = carbon_get_the_post_meta('vg_home_plans_section_plans'))): ?>
     <section id="plans-overview" class="py-5">
         <div class="container">
-            <div class="row my-5">
-                <div class="col-lg-12">
+            <div class="row my-4">
+                <div class="col-lg-12 mb-md-5">
                     <h2 class="text-center">
                         <?php echo carbon_get_the_post_meta('vg_home_plans_section_title'); ?>
                     </h2>
@@ -150,7 +152,7 @@
             </div>
             <div class="row row-eq-height py-4">
                 <?php foreach ($plans as $key => $plan): ?>
-                    <div class="col-lg-4 mb-5">
+                    <div class="col-md-4 mb-5">
                         <div class="plan">
                             <h3 class="text-uppercase font-style-normal">
                                 <?php echo $plan['name']; ?>
