@@ -517,8 +517,12 @@ a:hover {
     }
 
     #navbar .nav-cart {
-        font-size: 2.25rem;
+        display: inline-block;
         vertical-align: middle;
+    }
+
+    #navbar .nav-cart .nav-link {
+        font-size: 2.25rem;
         margin-right: 10px;
         position: relative;
     }
@@ -529,6 +533,7 @@ a:hover {
         right: -7px;
         font-size: 1.5rem;
         background-color: #000;
+        color: #ffd100;
         margin-left: 0;
     }
 
