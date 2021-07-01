@@ -44,6 +44,10 @@ $(document).ready(function() {
     
         $.post(productUrl, JSON.stringify(data) + '&_wp_http_referer=' + productUrl, function (result) {
             $.ajax($wrapFragmentRefresh);
+
+            $('.add-to-cart').text('Go to cart');
+
+            $('.add-to-cart').removeClass('add-to-cart');
         });
     });
 });
