@@ -87,6 +87,9 @@ if (!function_exists('vg_after_theme_setup')) {
         foreach ($custom_fields as $field) {
             require_once(str_replace(array('/', '\\'), DIRECTORY_SEPARATOR, $field).'.php');
         }
+
+        //enable woocomerce support
+        add_theme_support('woocommerce');
     }
 }
 add_action('after_setup_theme', 'vg_after_theme_setup');
@@ -211,6 +214,22 @@ if (!function_exists('vg_get_woo_cart_icon_menu')) {
 }
 add_filter('wp_nav_menu_primary-menu_items', 'vg_get_woo_cart_icon_menu', 10, 2);
 
+if (!function_exists('vg_is_in_cart')) {
+    /**
+     * @param WC_Product $product
+     * 
+     * @return bool
+     */
+    function vg_is_in_cart($product) {
+        foreach (WC()->cart->get_cart() as $cart_item)
+            if ($cart_item['product_id'] == $product->get_id()) {
+                return true;
+            }
+    
+        return false;
+    }
+}
+
 if (!function_exists('vg_add_to_cart_button_text')) {
     /**
      * @param string     $button_text
@@ -219,13 +238,68 @@ if (!function_exists('vg_add_to_cart_button_text')) {
      * @return string
      */
     function vg_add_to_cart_button_text($button_text, $product) {
-        foreach (WC()->cart->get_cart() as $cart_item)
-            if ($cart_item['product_id'] == $product->get_id()) {
-                return __('Go to Cart', 'woocommerce');
-            }
-    
+        if (vg_is_in_cart($product)) {
+            return __('Go to Cart', 'woocommerce');
+        }
+
         return __('Buy Now', 'woocommerce');
     }
 }
 add_filter('woocommerce_product_add_to_cart_text', 'vg_add_to_cart_button_text', 10, 2);
 add_filter('woocommerce_product_single_add_to_cart_text', 'vg_add_to_cart_button_text', 10, 2);
+
+if (!function_exists('vg_woocommerce_get_product_thumbnail')) {
+    /**
+     * @param string $size
+     * @param int    $placeholder_width
+     * @param int    $placeholder_height
+     * 
+     * @return string
+     */
+    function vg_woocommerce_get_product_thumbnail($size = 'shop_catalog', $placeholder_width = 0, $placeholder_height = 0) {
+        global $post, $woocommerce;
+
+        $image_url = '';
+
+        if (has_post_thumbnail()) {
+            $image_url = get_the_post_thumbnail_url($post->ID, $size); 
+        } else {
+            $image_url = woocommerce_placeholder_img_src();
+        }
+
+        $output = '<img class="w-100" src="'. $image_url .'" alt="'. $post->post_title .'" />';
+        
+        return $output;
+    }
+}
+
+if (!function_exists('woocommerce_template_loop_product_thumbnail')) {
+    function woocommerce_template_loop_product_thumbnail() {
+        echo vg_woocommerce_get_product_thumbnail();
+    } 
+}
+remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+add_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+
+if (!function_exists('vg_add_to_cart_button')) {
+    /**
+     * @param string     $button_text
+     * @param WC_Product $product
+     * @param array      $args
+     * 
+     * @return string
+     */
+    function vg_add_to_cart_button($button_text, $product, $args) {
+        $args['class'] = 'vg-btn vg-btn-sm vg-btn-primary text-uppercase font-weight-bold';
+        
+        return sprintf(
+            '<a href="%s" data-quantity="%s" class="%s" %s><span>%s</span></a>',
+            esc_url(vg_is_in_cart($product) ? wc_get_cart_url() : $product->add_to_cart_url()),
+            esc_attr(isset($args['quantity']) ? $args['quantity'] : 1),
+            esc_attr(isset($args['class']) ? $args['class'] : 'vg-btn'),
+            isset($args['attributes']) ? wc_implode_html_attributes( $args['attributes']) : '',
+            esc_html($product->add_to_cart_text())
+        );
+    }
+}
+add_filter('woocommerce_loop_add_to_cart_link', 'vg_add_to_cart_button', 10, 3);

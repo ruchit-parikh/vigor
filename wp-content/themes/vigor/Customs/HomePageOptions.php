@@ -104,14 +104,6 @@ class HomePageOptions
                             'value' => '-1',
                         )
                     )),
-                Field::make('association', 'vg_home_share_passion_section_products', __('Select Products to Show'))
-                    ->set_types(array(
-                        array(
-                            'type'      => 'post',
-                            'post_type' => 'product',
-                        ),
-                    ))
-                    ->set_max(2),
 
                 Field::make('separator', 'vg_home_newsletter_section', __('Newsletter')),
                 Field::make('text', 'vg_home_newsletter_section_title', __('Title')),

@@ -214,43 +214,20 @@
                 <?php endif; ?>
             </div>
 
-            <?php 
-                foreach (carbon_get_the_post_meta('vg_home_share_passion_section_products') as $product): 
-                    $wc_product = wc_get_product($product['id']);
-            ?>
+            <?php
+                $products = wc_get_products(array('featured' => true, 'limit' => 2));
                 
-                <div class="col-lg">
-                    <div class="product">
-                        <img class="w-100" src="<?php echo wp_get_attachment_image_src($wc_product->get_image_id(), 'full')[0]; ?>" alt="<?php echo $wc_product->get_name(); ?>">
-                        <div class="product-content text-light">
-                            <div class="content">
-                                <h3>
-                                    <?php echo $wc_product->get_name(); ?>
-                                </h3>
-                                <span class="price">
-                                    <?php echo $wc_product->get_price_html(); ?>
-                                </span>
-                            </div>
-                            
-                            <?php 
-                                echo apply_filters(
-                                    'woocommerce_loop_add_to_cart_link',
-                                    sprintf(
-                                        '<a class="vg-btn vg-btn-primary vg-btn-sm text-uppercase" href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="add_to_cart %s product_type_%s"><span>%s</span></a>',
-                                        esc_url(WC()->cart->find_product_in_cart($wc_product->get_id()) ? wc_get_cart_url() : do_shortcode('[add_to_cart_url id="'.$wc_product->get_id().'"]')),
-                                        esc_attr($wc_product->get_id()),
-                                        esc_attr($wc_product->get_sku()),
-                                        $wc_product->is_purchasable() ? '' : '',
-                                        esc_attr($wc_product->product_type),
-                                        esc_html($wc_product->add_to_cart_text())
-                                    ),
-                                    $wc_product
-                                ); 
-                            ?>
-                        </div>
+                foreach ($products as $product):
+                    $post = get_post($product->get_id());
+                    setup_postdata($post);
+            ?>
+                    <div class="col-lg">
+                        <?php wc_get_template_part('content', 'product'); ?>
                     </div>
-                </div>
-            <?php endforeach; ?>
+
+            <?php 
+                endforeach; 
+            ?>
         </div>
     </div>
 </section>

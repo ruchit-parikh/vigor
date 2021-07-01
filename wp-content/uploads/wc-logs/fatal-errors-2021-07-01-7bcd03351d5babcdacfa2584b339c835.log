@@ -40,3 +40,351 @@ Stack trace:
 #8 /var/www/html/vigor/wp-settings.php(560): do_action()
 #9 /var/www/html/vigor/wp-config.php(93): require_onc in /var/www/html/vigor/wp-content/themes/vigor/Customs/HomePageOptions.php on line 99
 
+2021-07-01T04:44:17+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on null in /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php:2
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/template.php(732): require()
+#1 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(223): wc_get_template_part()
+#3 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#5 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+#6 {main}
+  thrown in /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php on line 2
+
+2021-07-01T04:44:22+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on null in /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php:2
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/template.php(732): require()
+#1 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(223): wc_get_template_part()
+#3 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#5 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+#6 {main}
+  thrown in /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php on line 2
+
+2021-07-01T04:44:35+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on null in /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php:2
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/template.php(732): require()
+#1 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(223): wc_get_template_part()
+#3 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#5 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+#6 {main}
+  thrown in /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php on line 2
+
+2021-07-01T04:44:37+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on null in /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php:2
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/template.php(732): require()
+#1 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(223): wc_get_template_part()
+#3 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#5 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+#6 {main}
+  thrown in /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php on line 2
+
+2021-07-01T04:51:11+00:00 CRITICAL Uncaught Error: Call to a member function is_visible() on array in /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php:8
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/template.php(732): require()
+#1 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#2 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(224): wc_get_template_part()
+#3 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#5 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+#6 {main}
+  thrown in /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php on line 8
+
+2021-07-01T05:14:31+00:00 CRITICAL syntax error, unexpected 'while' (T_WHILE), expecting ';' or ',' in /var/www/html/vigor/wp-content/themes/vigor/front-page.php on line 236
+
+2021-07-01T05:19:43+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Query::have_posts() in /var/www/html/vigor/wp-content/themes/vigor/front-page.php:232
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#2 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+#3 {main}
+  thrown in /var/www/html/vigor/wp-content/themes/vigor/front-page.php on line 232
+
+2021-07-01T05:29:36+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on array in /var/www/html/vigor/wp-content/themes/vigor/front-page.php:231
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#2 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+#3 {main}
+  thrown in /var/www/html/vigor/wp-content/themes/vigor/front-page.php on line 231
+
+2021-07-01T05:31:01+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on array in /var/www/html/vigor/wp-content/themes/vigor/front-page.php:231
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#2 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+#3 {main}
+  thrown in /var/www/html/vigor/wp-content/themes/vigor/front-page.php on line 231
+
+2021-07-01T05:31:06+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on array in /var/www/html/vigor/wp-content/themes/vigor/front-page.php:230
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/vigor/wp-blog-header.php(19): require_once('/var/www/html/v...')
+#2 /var/www/html/vigor/index.php(17): require('/var/www/html/v...')
+#3 {main}
+  thrown in /var/www/html/vigor/wp-content/themes/vigor/front-page.php on line 230
+
+2021-07-01T06:06:26+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get_image_size() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:249
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(238): vg_woocommerce_get_product_thumbnail()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_product_thumbnail()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(28): do_action()
+#5 /var/www/html/vigor/wp-includes/template.php(732): require('/var/www/html/v...')
+#6 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(225): wc_get_template_part()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header. in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 249
+
+2021-07-01T06:06:41+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get_image_size() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:249
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(238): vg_woocommerce_get_product_thumbnail()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_product_thumbnail()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(28): do_action()
+#5 /var/www/html/vigor/wp-includes/template.php(732): require('/var/www/html/v...')
+#6 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(225): wc_get_template_part()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header. in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 249
+
+2021-07-01T06:08:39+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get_image_size() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:256
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(238): vg_woocommerce_get_product_thumbnail()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_product_thumbnail()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(28): do_action()
+#5 /var/www/html/vigor/wp-includes/template.php(732): require('/var/www/html/v...')
+#6 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(225): wc_get_template_part()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header. in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 256
+
+2021-07-01T06:15:19+00:00 CRITICAL syntax error, unexpected '.' in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 260
+
+2021-07-01T06:15:27+00:00 CRITICAL syntax error, unexpected '.' in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 260
+
+2021-07-01T06:15:27+00:00 CRITICAL syntax error, unexpected '.' in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 260
+
+2021-07-01T06:15:28+00:00 CRITICAL syntax error, unexpected '.' in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 260
+
+2021-07-01T06:15:33+00:00 CRITICAL syntax error, unexpected '.' in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 260
+
+2021-07-01T06:15:35+00:00 CRITICAL syntax error, unexpected '.' in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 260
+
+2021-07-01T06:20:29+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_title() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:263
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(238): vg_woocommerce_get_product_thumbnail()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_product_thumbnail()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(28): do_action()
+#5 /var/www/html/vigor/wp-includes/template.php(732): require('/var/www/html/v...')
+#6 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(225): wc_get_template_part()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header.php(19):  in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 263
+
+2021-07-01T06:20:32+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_title() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:263
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(238): vg_woocommerce_get_product_thumbnail()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_product_thumbnail()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(28): do_action()
+#5 /var/www/html/vigor/wp-includes/template.php(732): require('/var/www/html/v...')
+#6 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(225): wc_get_template_part()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header.php(19):  in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 263
+
+2021-07-01T06:20:42+00:00 CRITICAL syntax error, unexpected ']' in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 258
+
+2021-07-01T06:20:43+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_title() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:263
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(238): vg_woocommerce_get_product_thumbnail()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_product_thumbnail()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(28): do_action()
+#5 /var/www/html/vigor/wp-includes/template.php(732): require('/var/www/html/v...')
+#6 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(225): wc_get_template_part()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header.php(19):  in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 263
+
+2021-07-01T06:20:46+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_title() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:263
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(238): vg_woocommerce_get_product_thumbnail()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_product_thumbnail()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(28): do_action()
+#5 /var/www/html/vigor/wp-includes/template.php(732): require('/var/www/html/v...')
+#6 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(225): wc_get_template_part()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header.php(19):  in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 263
+
+2021-07-01T06:20:48+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_title() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:263
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(238): vg_woocommerce_get_product_thumbnail()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_product_thumbnail()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(28): do_action()
+#5 /var/www/html/vigor/wp-includes/template.php(732): require('/var/www/html/v...')
+#6 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(225): wc_get_template_part()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header.php(19):  in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 263
+
+2021-07-01T06:22:45+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_title() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:263
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(238): vg_woocommerce_get_product_thumbnail()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_product_thumbnail()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(28): do_action()
+#5 /var/www/html/vigor/wp-includes/template.php(732): require('/var/www/html/v...')
+#6 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(225): wc_get_template_part()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header.php(19):  in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 263
+
+2021-07-01T06:22:47+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_title() in /var/www/html/vigor/wp-content/themes/vigor/functions.php:263
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(238): vg_woocommerce_get_product_thumbnail()
+#1 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_product_thumbnail()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(28): do_action()
+#5 /var/www/html/vigor/wp-includes/template.php(732): require('/var/www/html/v...')
+#6 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template()
+#7 /var/www/html/vigor/wp-content/themes/vigor/front-page.php(225): wc_get_template_part()
+#8 /var/www/html/vigor/wp-includes/template-loader.php(106): include('/var/www/html/v...')
+#9 /var/www/html/vigor/wp-blog-header.php(19):  in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 263
+
+2021-07-01T06:45:28+00:00 CRITICAL Uncaught Error: Call to a member function add_to_cart_url() on string in /var/www/html/vigor/wp-content/themes/vigor/functions.php:279
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(294): vg_add_to_cart_button()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(25): apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1309): wc_get_template()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_add_to_cart()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(54): do_action()
+#9 /var/www/html/vigor/ in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 279
+
+2021-07-01T06:45:30+00:00 CRITICAL Uncaught Error: Call to a member function add_to_cart_url() on string in /var/www/html/vigor/wp-content/themes/vigor/functions.php:279
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(294): vg_add_to_cart_button()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(25): apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1309): wc_get_template()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_add_to_cart()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(54): do_action()
+#9 /var/www/html/vigor/ in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 279
+
+2021-07-01T06:45:54+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_add_to_cart_button(), 1 passed in /var/www/html/vigor/wp-includes/class-wp-hook.php on line 294 and exactly 2 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:276
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(294): vg_add_to_cart_button()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(25): apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1309): wc_get_template()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_add_to_cart()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/ in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 276
+
+2021-07-01T06:45:55+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function vg_add_to_cart_button(), 1 passed in /var/www/html/vigor/wp-includes/class-wp-hook.php on line 294 and exactly 2 expected in /var/www/html/vigor/wp-content/themes/vigor/functions.php:276
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(294): vg_add_to_cart_button()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(25): apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1309): wc_get_template()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_add_to_cart()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/ in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 276
+
+2021-07-01T06:47:03+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on string in /var/www/html/vigor/wp-content/themes/vigor/functions.php:279
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(294): vg_add_to_cart_button()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(25): apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1309): wc_get_template()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_add_to_cart()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(54): do_action()
+#9 /var/www/html/vigor/wp in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 279
+
+2021-07-01T06:47:05+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on string in /var/www/html/vigor/wp-content/themes/vigor/functions.php:279
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(294): vg_add_to_cart_button()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(25): apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1309): wc_get_template()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_add_to_cart()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(54): do_action()
+#9 /var/www/html/vigor/wp in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 279
+
+2021-07-01T06:47:14+00:00 CRITICAL Uncaught Error: Call to a member function add_to_cart_url() on string in /var/www/html/vigor/wp-content/themes/vigor/functions.php:279
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(294): vg_add_to_cart_button()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(25): apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1309): wc_get_template()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_add_to_cart()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(54): do_action()
+#9 /var/www/html/vigor/ in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 279
+
+2021-07-01T06:47:15+00:00 CRITICAL Uncaught Error: Call to a member function add_to_cart_url() on string in /var/www/html/vigor/wp-content/themes/vigor/functions.php:279
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(294): vg_add_to_cart_button()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(25): apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1309): wc_get_template()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_add_to_cart()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(54): do_action()
+#9 /var/www/html/vigor/ in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 279
+
+2021-07-01T06:48:11+00:00 CRITICAL Uncaught Error: Call to a member function add_to_cart_url() on string in /var/www/html/vigor/wp-content/themes/vigor/functions.php:279
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(294): vg_add_to_cart_button()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php(25): apply_filters()
+#3 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/v...')
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1309): wc_get_template()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): woocommerce_template_loop_add_to_cart()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(54): do_action()
+#9 /var/www/html/vigor/ in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 279
+

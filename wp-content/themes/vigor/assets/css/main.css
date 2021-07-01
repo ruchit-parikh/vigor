@@ -891,12 +891,14 @@ ul > li:nth-child(n + 6) .vg-check::before {
     align-items: flex-end;
 }
 
-.product-content h3 {
+.product-content h2 {
+    color: #fff;
     font-size: 1rem;
     line-height: 1.75;
     margin-bottom: 0rem;
     font-weight: 500;
     font-style: normal;
+    letter-spacing: normal;
 }
 
 .product-content .price {
@@ -904,6 +906,8 @@ ul > li:nth-child(n + 6) .vg-check::before {
     font-size: 0.8rem;
     font-style: normal;
     line-height: 2.25;
+    color: #fff;
+    letter-spacing: normal;
 }
 
 #newsletter #newsletter-form input[type="text"],
