@@ -210,3 +210,22 @@ if (!function_exists('vg_get_woo_cart_icon_menu')) {
     }
 }
 add_filter('wp_nav_menu_primary-menu_items', 'vg_get_woo_cart_icon_menu', 10, 2);
+
+if (!function_exists('vg_add_to_cart_button_text')) {
+    /**
+     * @param string     $button_text
+     * @param WC_Product $product
+     * 
+     * @return string
+     */
+    function vg_add_to_cart_button_text($button_text, $product) {
+        foreach (WC()->cart->get_cart() as $cart_item)
+            if ($cart_item['product_id'] == $product->get_id()) {
+                return __('Go to Cart', 'woocommerce');
+            }
+    
+        return __('Buy Now', 'woocommerce');
+    }
+}
+add_filter('woocommerce_product_add_to_cart_text', 'vg_add_to_cart_button_text', 10, 2);
+add_filter('woocommerce_product_single_add_to_cart_text', 'vg_add_to_cart_button_text', 10, 2);

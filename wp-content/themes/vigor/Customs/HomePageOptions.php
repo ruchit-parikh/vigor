@@ -91,6 +91,28 @@ class HomePageOptions
                         <% } %>
                     '),
 
+                Field::make('separator', 'vg_home_share_passion_section', __('Share The Passion')),
+                Field::make('text', 'vg_home_share_passion_section_title', __('Title'))->set_required(),
+                Field::make('rich_text', 'vg_home_share_passion_section_description', __('Description')),
+                Field::make('text', 'vg_home_share_passion_section_shop_text', __('Shop Link Text')),
+                Field::make('select', 'vg_home_share_passion_section_shop_link', __('Shop Link Page'))
+                    ->set_options($pages),
+                Field::make('text', 'vg_home_share_passion_section_shop_url', __('Shop Link Url'))
+                    ->set_conditional_logic(array(
+                        array(
+                            'field' => 'vg_home_share_passion_section_shop_link',
+                            'value' => '-1',
+                        )
+                    )),
+                Field::make('association', 'vg_home_share_passion_section_products', __('Select Products to Show'))
+                    ->set_types(array(
+                        array(
+                            'type'      => 'post',
+                            'post_type' => 'product',
+                        ),
+                    ))
+                    ->set_max(2),
+
                 Field::make('separator', 'vg_home_newsletter_section', __('Newsletter')),
                 Field::make('text', 'vg_home_newsletter_section_title', __('Title')),
                 Field::make('text', 'vg_home_newsletter_section_subtitle', __('Subtitle')),

@@ -324,6 +324,14 @@ a:hover {
     transform: skewX(10deg);
 }
 
+.vg-btn.vg-btn-sm {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+    padding: 0.4rem 1.3rem;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
 .vg-btn.vg-btn-primary {
     background-color: #ffd100;
     border-color: #ffd100;
@@ -585,12 +593,14 @@ a:hover {
 }
 
 #home-banner > *,
-#coaches .carousel-item > * {
+#coaches .carousel-item > *,
+.product > * {
     z-index: 2;
 }
 
 #home-banner::after,
-#coaches .carousel-item::after {
+#coaches .carousel-item::after,
+.product::after {
     content: '';
     position: absolute;
     top: 0px;
@@ -638,6 +648,7 @@ a:hover {
 
 .carousel-control-next,
 .carousel-control-prev {
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -854,6 +865,47 @@ ul > li:nth-child(n + 6) .vg-check::before {
     }
 }
 
+.product {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#share-passion a:not(.vg-btn-sm) {
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.product::after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 62.06%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.product-content {
+    position: absolute;
+    display: block;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: flex-end;
+}
+
+.product-content h3 {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 0rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.product-content .price {
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-style: normal;
+    line-height: 2.25;
+}
+
 #newsletter #newsletter-form input[type="text"],
 #newsletter #newsletter-form input[type="email"],
 #newsletter #newsletter-form input[type="number"] {
@@ -895,6 +947,7 @@ ul > li:nth-child(n + 6) .vg-check::before {
 }
 
 #newsletter #newsletter-form .wpcf7-form .wpcf7-response-output {
+    width: -moz-fit-content;
     width: fit-content;
     margin: auto;
     font-weight: 500;
