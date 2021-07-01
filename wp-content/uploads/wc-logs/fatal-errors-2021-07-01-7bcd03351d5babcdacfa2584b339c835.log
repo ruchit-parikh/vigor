@@ -388,3 +388,59 @@ Stack trace:
 #8 /var/www/html/vigor/wp-content/themes/vigor/woocommerce/content-product.php(54): do_action()
 #9 /var/www/html/vigor/ in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 279
 
+2021-07-01T10:57:53+00:00 CRITICAL Uncaught Error: Call to a member function get_product_id() on array in /var/www/html/vigor/wp-content/themes/vigor/functions.php:198
+Stack trace:
+#0 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#1 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#3 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#4 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#5 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#6 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#7 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::do_wc_ajax()
+#8 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#9 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#10 /var/www/html/vigor/wp-includ in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 198
+
+2021-07-01T11:00:50+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on bool in /var/www/html/vigor/wp-content/themes/vigor/functions.php:231
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(299): vg_is_in_cart()
+#1 /var/www/html/vigor/wp-content/themes/vigor/functions.php(198): vg_add_to_cart_button()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#3 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#9 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/vigor/w in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 231
+
+2021-07-01T11:00:54+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on bool in /var/www/html/vigor/wp-content/themes/vigor/functions.php:231
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(299): vg_is_in_cart()
+#1 /var/www/html/vigor/wp-content/themes/vigor/functions.php(198): vg_add_to_cart_button()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#3 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#9 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/vigor/w in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 231
+
+2021-07-01T11:01:03+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on bool in /var/www/html/vigor/wp-content/themes/vigor/functions.php:231
+Stack trace:
+#0 /var/www/html/vigor/wp-content/themes/vigor/functions.php(299): vg_is_in_cart()
+#1 /var/www/html/vigor/wp-content/themes/vigor/functions.php(198): vg_add_to_cart_button()
+#2 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): vg_woo_cart_ajax()
+#3 /var/www/html/vigor/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#4 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(196): apply_filters()
+#5 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::get_refreshed_fragments()
+#6 /var/www/html/vigor/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#7 /var/www/html/vigor/wp-includes/plugin.php(484): WP_Hook->do_action()
+#8 /var/www/html/vigor/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(90): do_action()
+#9 /var/www/html/vigor/wp-includes/class-wp-hook.php(292): WC_AJAX::do_wc_ajax()
+#10 /var/www/html/vigor/w in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 231
+

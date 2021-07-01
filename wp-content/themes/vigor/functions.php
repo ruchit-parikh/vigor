@@ -194,6 +194,10 @@ if (!function_exists('vg_woo_cart_ajax')) {
     function vg_woo_cart_ajax($fragments) {
         $fragments['.nav-cart .nav-link'] = vg_get_woo_cart_icon();
 
+        foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) { 
+            $fragments['.add-to-cart[data-product_id="'.$cart_item['product_id'].'"]'] = vg_add_to_cart_button(__('Buy Now'), wc_get_product($cart_item['product_id']), array()); 
+        } 
+
         return $fragments;
     }
 }
