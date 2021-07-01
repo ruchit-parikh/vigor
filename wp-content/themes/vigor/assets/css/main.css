@@ -615,6 +615,7 @@ a:hover {
     height: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.0970553), rgba(0, 0, 0, 0.0970553));
     z-index: 1;
+    background-blend-mode: multiply, normal;
 }
 
 #featured-description {
@@ -715,6 +716,10 @@ a:hover {
     .carousel.slide .carousel-control-prev {
         left: calc(50vw - 620px);
     }
+}
+
+#coaches .carousel-item::after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 27.91%);
 }
 
 #coaches .author {
