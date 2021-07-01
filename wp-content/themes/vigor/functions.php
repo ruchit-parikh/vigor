@@ -314,3 +314,7 @@ if (!function_exists('vg_add_to_cart_button')) {
     }
 }
 add_filter('woocommerce_loop_add_to_cart_link', 'vg_add_to_cart_button', 10, 3);
+
+//TODO: Remove this actions once finished to show links of product.
+remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);

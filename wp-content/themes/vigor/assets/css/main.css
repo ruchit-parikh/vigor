@@ -330,6 +330,7 @@ a:hover {
     padding: 0.4rem 1.3rem;
     height: -moz-fit-content;
     height: fit-content;
+    margin-bottom: 0.6rem;
 }
 
 .vg-btn.vg-btn-primary {
