@@ -894,11 +894,11 @@ ul > li:nth-child(n + 6) .vg-check::before {
 }
 
 #map-canvas .gm-style-iw {
-    -moz-transform: translate(10%,0);
-    -webkit-transform: translate(10%,0);
-    -ms-transform: translate(10%,0);
-    -o-transform: translate(10%,0);
-    transform: translate(10%,0);
+    -moz-transform: translate(10%,-50%);
+    -webkit-transform: translate(10%,-50%);
+    -ms-transform: translate(10%,-50%);
+    -o-transform: translate(10%,-50%);
+    transform: translate(10%,-50%);
 }
 
 #map-canvas .gm-style .gm-style-iw-t::after {
