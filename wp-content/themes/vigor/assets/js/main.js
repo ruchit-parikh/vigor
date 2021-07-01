@@ -79,6 +79,8 @@ function initializeMap() {
         //close info window when click on map
         google.maps.event.addListener(map, "click", function(event) {
             infowindow.close();
+
+            resetMarkers();
         });
     }
 }
@@ -105,9 +107,7 @@ function loadMarkers(map, infowindow) {
 
         // Marker click listener
         google.maps.event.addListener(mapPin, 'click', function () {
-            for(marker of markers) {
-                marker.setIcon(vg_map_data.marker);
-            }
+            resetMarkers();
 
             mapPin.setIcon(vg_map_data.active_marker);
 
@@ -125,4 +125,10 @@ function loadMarkers(map, infowindow) {
     }
 
     map.fitBounds(bounds);
+}
+
+function resetMarkers() {
+    for(marker of markers) {
+        marker.setIcon(vg_map_data.marker);
+    }
 }
