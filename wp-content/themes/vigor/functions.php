@@ -5,12 +5,12 @@ use Customs\CPTCoach;
 use Customs\HomePageOptions;
 use Customs\ThemeSettings;
 
-/**
- * Get all custom fields/taxonomies list
- * 
- * @return array
- */
 if (!function_exists('vg_get_all_custom_fields')) {
+    /**
+     * Get all custom fields/taxonomies list
+     *
+     * @return array
+     */
     function vg_get_all_custom_fields(): array {
         return array(
             CPTCoach::class,
