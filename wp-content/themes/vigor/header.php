@@ -38,15 +38,9 @@
                     <?php endif; ?>
                 </a>
                 <div class="float-right">
-                    <a class="nav-cart d-lg-none" href="<?php echo wc_get_cart_url(); ?>">
-                        <i class="vg-icon-cart text-dark"></i>
-
-                        <?php if (($cart_count = WC()->cart->cart_contents_count)  > 0): ?>
-                            <span class="cart-contents-count">
-                                <?php echo $cart_count; ?> 
-                            </span>
-                        <?php endif; ?>
-                    </a>
+                    <div class="nav-cart d-lg-none">
+                        <?php echo do_shortcode('[vg_get_woo_cart_icon]'); ?>
+                    </div>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>

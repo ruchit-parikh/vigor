@@ -170,13 +170,13 @@ if (!function_exists('vg_get_woo_cart_icon')) {
         $cart_count = WC()->cart->cart_contents_count;
         $cart_url   = wc_get_cart_url();
         
-        $html .= '<li class="menu-item menu-item-type-custom nav-item nav-cart d-none d-lg-inline"><a class="nav-link" href="' . $cart_url . '" title="My Cart"><i class="vg-icon-cart"></i>';
+        $html .= '<a class="nav-link" href="' . $cart_url . '" title="My Cart"><i class="vg-icon-cart"></i>';
         
         if ($cart_count > 0) {
             $html .= '<span class="cart-contents-count">' . $cart_count . '</span>';
         }
 
-        $html .= '</a></li>';
+        $html .= '</a>';
 
         echo $html;
 	        
@@ -192,7 +192,7 @@ if (!function_exists('vg_woo_cart_ajax')) {
      * @return array
      */
     function vg_woo_cart_ajax($fragments) {
-        $fragments['a.cart-contents'] = vg_get_woo_cart_icon();
+        $fragments['.nav-cart .nav-link'] = vg_get_woo_cart_icon();
 
         return $fragments;
     }
@@ -207,7 +207,9 @@ if (!function_exists('vg_get_woo_cart_icon_menu')) {
      * @return string
      */
     function vg_get_woo_cart_icon_menu($items, $args) {
+        $items .= '<li class="menu-item menu-item-type-custom nav-item nav-cart d-none d-lg-inline">';
         $items .= do_shortcode("[vg_get_woo_cart_icon]");
+        $items .= '</li>';
 
         return $items;
     }
@@ -290,11 +292,16 @@ if (!function_exists('vg_add_to_cart_button')) {
      * @return string
      */
     function vg_add_to_cart_button($button_text, $product, $args) {
+        $is_in_cart    = vg_is_in_cart($product);
         $args['class'] = 'vg-btn vg-btn-sm vg-btn-primary text-uppercase font-weight-bold';
+
+        if (!$is_in_cart) {
+            $args['class'] .= ' add-to-cart';
+        }
         
         return sprintf(
             '<a href="%s" data-quantity="%s" class="%s" %s><span>%s</span></a>',
-            esc_url(vg_is_in_cart($product) ? wc_get_cart_url() : $product->add_to_cart_url()),
+            esc_url($is_in_cart ? wc_get_cart_url() : $product->add_to_cart_url()),
             esc_attr(isset($args['quantity']) ? $args['quantity'] : 1),
             esc_attr(isset($args['class']) ? $args['class'] : 'vg-btn'),
             isset($args['attributes']) ? wc_implode_html_attributes( $args['attributes']) : '',
