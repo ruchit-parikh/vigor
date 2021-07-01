@@ -99,14 +99,14 @@ function loadMarkers(map, infowindow) {
         markers.push(mapPin);
 
         // Marker click listener
-        google.maps.event.addListener(mapPin, 'click', function (office) {
+        google.maps.event.addListener(mapPin, 'click', function () {
             for(marker of markers) {
                 marker.setIcon(vg_map_data.marker);
             }
 
             mapPin.setIcon(vg_map_data.active_marker);
 
-            infowindow.setContent('<div class="bg-primary py-5">HI</div>');
+            infowindow.setContent(office.content);
             infowindow.open({
                 anchor: mapPin,
                 map,

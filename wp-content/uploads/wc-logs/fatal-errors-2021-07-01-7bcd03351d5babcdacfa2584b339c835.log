@@ -508,3 +508,5 @@ Stack trace:
 
 2021-07-01T16:47:29+00:00 CRITICAL syntax error, unexpected 'Field' (T_STRING), expecting ')' in /var/www/html/vigor/wp-content/themes/vigor/Customs/ThemeSettings.php on line 25
 
+2021-07-01T22:09:18+00:00 CRITICAL syntax error, unexpected 'wp_localize_script' (T_STRING), expecting ';' or ',' in /var/www/html/vigor/wp-content/themes/vigor/functions.php on line 179
+

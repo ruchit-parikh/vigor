@@ -146,6 +146,32 @@ if (!function_exists('vg_change_login_url')) {
 }
 add_filter('login_headerurl', 'vg_change_login_url');
 
+if (!function_exists('vg_get_map_locations')) {
+    /**
+     * @return array
+     */
+    function vg_get_map_locations() {
+        $locations = array();
+
+        foreach (carbon_get_theme_option('vg_office_locations') as $location) {
+            ob_start();
+
+            get_template_part('templates/gmap', 'infowindow', array(
+                'office' => $location
+            ));
+
+            $content = ob_get_contents();
+            
+            ob_end_clean();
+
+            $location['content'] = $content;
+            $locations[]         = $location;
+        }
+
+        return $locations;
+    }
+}
+
 /**
  * Enqueue all styles and scripts and other related assets needed
  */
@@ -164,9 +190,9 @@ if (!function_exists('vg_enque_assets')) {
         wp_enqueue_script('maps', "https://maps.googleapis.com/maps/api/js?key=$map_key&sensor=false", array ('bootstrap'), 1.0);
         wp_enqueue_script('main', get_stylesheet_directory_uri().'/assets/js/main.js', array ('bootstrap'), time());
 
-        //load maps data in javascripts from backend
+        //load all map needed data
         wp_localize_script('maps', 'vg_map_data', array(
-            'locations'     => carbon_get_theme_option('vg_office_locations'),
+            'locations'     => vg_get_map_locations(),
             'marker'        => get_template_directory_uri() . '/assets/images/marker.svg',
             'active_marker' => get_template_directory_uri() . '/assets/images/active-marker.svg',
         ));
