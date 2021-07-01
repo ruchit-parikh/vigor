@@ -831,11 +831,11 @@ ul > li .vg-check::before {
 }
 
 ul > li:nth-child(n + 4) .vg-check::before {
-    color: #f27a30;
+    color: #ff7b00;
 }
 
 ul > li:nth-child(n + 6) .vg-check::before {
-    color: #b63222;
+    color: #b61200;
 }
 
 @media screen and (min-width: 768px) {
