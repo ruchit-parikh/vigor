@@ -893,6 +893,18 @@ ul > li:nth-child(n + 6) .vg-check::before {
     height: 80vh;
 }
 
+#map-canvas .gm-style-iw {
+    -moz-transform: translate(10%,0);
+    -webkit-transform: translate(10%,0);
+    -ms-transform: translate(10%,0);
+    -o-transform: translate(10%,0);
+    transform: translate(10%,0);
+}
+
+#map-canvas .gm-style .gm-style-iw-t::after {
+    display: none;
+}
+
 @media screen and (max-width: 575px) {
     #map-canvas {
         height: 50vh;

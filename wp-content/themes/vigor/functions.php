@@ -156,12 +156,10 @@ if (!function_exists('vg_get_map_locations')) {
         foreach (carbon_get_theme_option('vg_office_locations') as $location) {
             ob_start();
 
-            get_template_part('templates/gmap', 'infowindow', array(
-                'office' => $location
-            ));
+            set_query_var('office', $location);
+            get_template_part('templates/gmap', 'infowindow');
 
             $content = ob_get_contents();
-            
             ob_end_clean();
 
             $location['content'] = $content;
