@@ -892,6 +892,7 @@ ul > li:nth-child(n + 6) .vg-check::before {
     bottom: 0px;
     right: 0px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem;
     align-items: flex-end;

@@ -208,7 +208,7 @@
                             $shop_link_url = get_page_link($link_page_id);
                         endif;
                     ?>
-                    <a href="<?php echo $shop_link_url; ?>" class="text-uppercase font-weight-bold">
+                    <a href="<?php echo $shop_link_url; ?>" class="text-uppercase font-weight-bold d-block mb-5">
                         <?php echo $shop_link_text; ?>
                     </a>
                 <?php endif; ?>
@@ -221,7 +221,7 @@
                     $post = get_post($product->get_id());
                     setup_postdata($post);
             ?>
-                    <div class="col-lg">
+                    <div class="col">
                         <?php wc_get_template_part('content', 'product'); ?>
                     </div>
 

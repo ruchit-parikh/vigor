@@ -29,7 +29,7 @@
 
     ?>
     <div class="product-content">
-        <div class="wrap">
+        <div class="wrap mb-3">
             <?php 
                 /**
                  * Hook: woocommerce_shop_loop_item_title.
