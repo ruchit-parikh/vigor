@@ -1,3 +1,5 @@
+let markers = [];
+
 $(document).ready(function() {
     let topMenu = $("#navbar");
 
@@ -46,4 +48,76 @@ $(document).ready(function() {
             $.ajax($wrapFragmentRefresh);
         });
     });
+
+    //initialize google map
+    initializeMap();
 });
+
+/**
+ * Initialize google map with markers
+ * All required data will be loaded through wordpress hook from backend
+ */
+function initializeMap() {
+    let infowindow = new google.maps.InfoWindow({
+        content: ''
+    });
+
+    let mapOptions = {
+        scrollwheel: false,
+        disableDoubleClickZoom: true,
+        mapTypeControl: false,
+        streetViewControl: false
+    };
+
+    let canvas = document.querySelector('#map-canvas');
+
+    if (canvas) {
+        let map = new google.maps.Map(canvas, mapOptions);
+
+        loadMarkers(map, infowindow);
+    }
+}
+
+/**
+ * Load markers on given map
+ * 
+ * @param {Object} map
+ * @param {Object} infowindow
+ */
+function loadMarkers(map, infowindow) {
+    let bounds = new google.maps.LatLngBounds();
+
+    for(let office of vg_map_data.locations) {
+        let pos = new google.maps.LatLng(office.location.lat, office.location.lng);
+
+        let mapPin = new google.maps.Marker({
+            position: pos,
+            map: map,
+            icon: vg_map_data.marker
+        });
+
+        markers.push(mapPin);
+
+        // Marker click listener
+        google.maps.event.addListener(mapPin, 'click', function (office) {
+            for(marker of markers) {
+                marker.setIcon(vg_map_data.marker);
+            }
+
+            mapPin.setIcon(vg_map_data.active_marker);
+
+            infowindow.setContent('<div class="bg-primary py-5">HI</div>');
+            infowindow.open({
+                anchor: mapPin,
+                map,
+            });
+
+            map.panTo(this.getPosition());
+            map.setZoom(13);
+        });
+
+        bounds.extend(mapPin.position);
+    }
+
+    map.fitBounds(bounds);
+}

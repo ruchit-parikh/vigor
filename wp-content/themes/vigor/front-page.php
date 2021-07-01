@@ -185,6 +185,13 @@
     </section>
 <?php endif; ?>
 
+<section id="map">
+    <h2 class="text-center">
+        <?php echo carbon_get_theme_option('map_title'); ?>
+    </h2>
+    <div id="map-canvas"></div>
+</section>
+
 <section id="share-passion" class="py-5">
     <div class="container">
         <div class="row my-4">

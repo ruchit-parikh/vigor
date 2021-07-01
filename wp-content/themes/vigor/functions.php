@@ -111,6 +111,16 @@ if (!function_exists('vg_attach_theme_options')) {
 }
 add_action('carbon_fields_register_fields', 'vg_attach_theme_options');
 
+if (!function_exists('vg_get_gmaps_api_key')) {
+    /**
+     * @return string
+     */
+    function vg_get_gmaps_api_key() {
+        return carbon_get_theme_option('vg_google_map_api_key');
+    }
+}
+add_filter('carbon_fields_map_field_api_key', 'vg_get_gmaps_api_key');
+
 if (!function_exists('vg_change_login_logo')) {
     function vg_change_login_logo() {
         ?>
@@ -141,6 +151,8 @@ add_filter('login_headerurl', 'vg_change_login_url');
  */
 if (!function_exists('vg_enque_assets')) {
     function vg_enque_assets() {
+        $map_key = carbon_get_theme_option('vg_google_map_api_key');
+
         wp_enqueue_style('style', get_stylesheet_uri());
         wp_enqueue_style('bootstrap', get_stylesheet_directory_uri().'/assets/css/bootstrap.min.css', array(), 1.0);
         wp_enqueue_style('main', get_stylesheet_directory_uri().'/assets/css/main.css', array('bootstrap'), time());
@@ -149,7 +161,15 @@ if (!function_exists('vg_enque_assets')) {
         wp_enqueue_script('jQuery', get_stylesheet_directory_uri().'/assets/js/jQuery.min.js', array (), 1.0);
         wp_enqueue_script('popper', get_stylesheet_directory_uri().'/assets/js/popper.min.js', array ('jQuery'), 1.0);
         wp_enqueue_script('bootstrap', get_stylesheet_directory_uri().'/assets/js/bootstrap.min.js', array ('popper'), 1.0);
+        wp_enqueue_script('maps', "https://maps.googleapis.com/maps/api/js?key=$map_key&sensor=false", array ('bootstrap'), 1.0);
         wp_enqueue_script('main', get_stylesheet_directory_uri().'/assets/js/main.js', array ('bootstrap'), time());
+
+        //load maps data in javascripts from backend
+        wp_localize_script('maps', 'vg_map_data', array(
+            'locations'     => carbon_get_theme_option('vg_office_locations'),
+            'marker'        => get_template_directory_uri() . '/assets/images/marker.svg',
+            'active_marker' => get_template_directory_uri() . '/assets/images/active-marker.svg',
+        ));
     }
 }
 add_action('wp_enqueue_scripts', 'vg_enque_assets');
