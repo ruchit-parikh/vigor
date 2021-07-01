@@ -75,6 +75,11 @@ function initializeMap() {
         let map = new google.maps.Map(canvas, mapOptions);
 
         loadMarkers(map, infowindow);
+
+        //close info window when click on map
+        google.maps.event.addListener(map, "click", function(event) {
+            infowindow.close();
+        });
     }
 }
 
