@@ -45,9 +45,9 @@ $(document).ready(function() {
         $.post(productUrl, JSON.stringify(data) + '&_wp_http_referer=' + productUrl, function (result) {
             $.ajax($wrapFragmentRefresh);
 
-            $('.add-to-cart span').text('Go to cart');
+            $this.find('span').text('Go to cart');
 
-            $('.add-to-cart').removeClass('add-to-cart');
+            $this.removeClass('add-to-cart');
         });
     });
 });
