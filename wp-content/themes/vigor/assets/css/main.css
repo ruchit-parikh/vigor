@@ -894,6 +894,13 @@ ul > li:nth-child(n + 6) .vg-check::before {
     height: 80vh;
 }
 
+@media screen and (max-width: 575px) {
+    #map-canvas {
+        min-height: 500px;
+        height: 75vh;
+    }
+}
+
 #map-canvas .gm-style-iw {
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgb(0 0 0 / 18%);
@@ -980,12 +987,6 @@ ul > li:nth-child(n + 6) .vg-check::before {
 #map-canvas .gm-style-iw-t button img {
     width: 2rem !important;
     height: 2rem !important;
-}
-
-@media screen and (max-width: 575px) {
-    #map-canvas {
-        height: 50vh;
-    }
 }
 
 .product {
