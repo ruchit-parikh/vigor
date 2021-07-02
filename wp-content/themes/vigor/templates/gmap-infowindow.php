@@ -17,15 +17,15 @@
         <?php endforeach; ?>
     </ul>
     
-    <div class="infobox-gallery">
+    <div class="infobox-gallery d-flex flex-wrap">
         <?php 
             $image_count = count($office['images']);
 
             foreach ($office['images'] as $key => $image_id): 
-                $image_url = wp_get_attachment_image_src($image_id, 'full')[0];
+                $image_url = wp_get_attachment_image_src($image_id)[0];
                 $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
         ?>
-                <a data-count="<?php echo $image_count - $key; ?>" href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="<?php echo $image_alt; ?>">
+                <a class="m-2" data-count="<?php echo $image_count - $key; ?>" href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="<?php echo $image_alt; ?>">
                     <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
                 </a>
         <?php 
