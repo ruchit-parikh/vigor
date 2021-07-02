@@ -890,19 +890,96 @@ ul > li:nth-child(n + 6) .vg-check::before {
 }
 
 #map-canvas {
+    min-height: 720px;
     height: 80vh;
 }
 
 #map-canvas .gm-style-iw {
-    -moz-transform: translate(10%,-50%);
-    -webkit-transform: translate(10%,-50%);
-    -ms-transform: translate(10%,-50%);
-    -o-transform: translate(10%,-50%);
-    transform: translate(10%,-50%);
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgb(0 0 0 / 18%);
+    border-radius: 0px;
+    padding: 1rem !important;
+    max-width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+    #map-canvas .gm-style-iw {
+        -moz-transform: translate(10%,-50%);
+        -webkit-transform: translate(10%,-50%);
+        -ms-transform: translate(10%,-50%);
+        -o-transform: translate(10%,-50%);
+        transform: translate(10%,-50%);
+    }
+}
+
+#map-canvas .infobox .infobox-content,
+#map-canvas  .infobox-timings {
+    font-family: 'vigor', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#map-canvas  .infobox-timings {
+    font-size: 0.6rem;
+    line-height: 2;
+    max-width: 60%;
+    text-transform: uppercase;
+}
+
+#map-canvas  .infobox-timings li {
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+#map-canvas .infobox-gallery img {
+    width: 5rem;
+    height: auto;
+}
+
+#map-canvas .infobox-gallery a:nth-child(n + 4) {
+    position: relative;
+    display: block;
+}
+
+#map-canvas .infobox-gallery a:nth-child(n + 4)::after {
+    content: attr(data-count) " more";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 99;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.504289), rgba(0, 0, 0, 0.504289));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.7rem;
+    line-height: 1.3;
+    color: #fff;
+}
+
+#map-canvas .infobox-gallery a:nth-child(n + 5),
 #map-canvas .gm-style .gm-style-iw-t::after {
     display: none;
+}
+
+#map-canvas .gm-style-iw-d {
+    overflow: hidden !important;
+}
+
+#map-canvas .gm-style-iw-t button {
+    top: 0 !important;
+    right: 1rem !important;
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+#map-canvas .gm-style-iw-t button img {
+    width: 2rem !important;
+    height: 2rem !important;
 }
 
 @media screen and (max-width: 575px) {
@@ -1039,7 +1116,8 @@ footer h2 {
     letter-spacing: normal;
 }
 
-footer ul.menu {
+footer ul.menu,
+.infobox-timings {
     list-style: none;
     padding-left: 0px;
 }
