@@ -1,6 +1,6 @@
 <div class="infobox">
     <div class="infobox-content">
-        <h3 class="text-uppercase font-weight-600 font-style-normal">
+        <h3 class="text-uppercase font-weight-600 font-style-normal mb-3">
             <?php echo $office['name']; ?>
         </h3>
         <address>
@@ -10,9 +10,9 @@
     
     <ul class="infobox-timings">
         <?php foreach ($office['times'] as $time): ?>
-            <li class="d-flex justify-content-between">
+            <li class="d-flex">
                 <span><?php echo $time['day']; ?></span>
-                <time><?php echo $time['time']; ?></time>
+                <time class="ml-3"><?php echo $time['time']; ?></time>
             </li>
         <?php endforeach; ?>
     </ul>
@@ -25,8 +25,8 @@
                 $image_url = wp_get_attachment_image_src($image_id, 'full')[0];
                 $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
         ?>
-                <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="<?php echo $image_alt; ?>">
-                    <img data-count="<?php echo $image_count - $key; ?>" src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
+                <a data-count="<?php echo $image_count - $key; ?>" href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="<?php echo $image_alt; ?>">
+                    <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
                 </a>
         <?php 
             endforeach; 
