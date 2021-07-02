@@ -82,6 +82,9 @@ function initializeMap() {
 
             resetMarkers();
         });
+
+        //reset markers when close button is clicked
+        google.maps.event.addListener(infowindow, 'closeclick', resetMarkers);
     }
 }
 
