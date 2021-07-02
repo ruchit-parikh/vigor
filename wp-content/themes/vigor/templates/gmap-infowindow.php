@@ -1,6 +1,6 @@
 <div class="infobox">
     <div class="infobox-content">
-        <h3 class="text-uppercase font-weight-600 font-style-normal mb-3">
+        <h3 class="text-uppercase font-weight-600 font-style-normal mb-2">
             <?php echo $office['name']; ?>
         </h3>
         <address>
