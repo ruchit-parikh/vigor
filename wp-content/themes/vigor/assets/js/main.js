@@ -120,7 +120,6 @@ function loadMarkers(map, infowindow) {
                 map,
             });
 
-            map.panTo(this.getPosition());
             map.setZoom(13);
         });
 
