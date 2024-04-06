@@ -116,7 +116,7 @@ if (!function_exists('vg_get_gmaps_api_key')) {
      * @return string
      */
     function vg_get_gmaps_api_key() {
-        return carbon_get_theme_option('vg_google_map_api_key');
+        return esc_html(carbon_get_theme_option('vg_google_map_api_key'));
     }
 }
 add_filter('carbon_fields_map_field_api_key', 'vg_get_gmaps_api_key');
@@ -141,7 +141,7 @@ add_action('login_enqueue_scripts', 'vg_change_login_logo');
 
 if (!function_exists('vg_change_login_url')) {
     function vg_change_login_url() {
-        return home_url();
+        return esc_url(home_url());
     }
 }
 add_filter('login_headerurl', 'vg_change_login_url');
@@ -175,7 +175,7 @@ if (!function_exists('vg_get_map_locations')) {
  */
 if (!function_exists('vg_enque_assets')) {
     function vg_enque_assets() {
-        $map_key = carbon_get_theme_option('vg_google_map_api_key');
+        $map_key = esc_html(carbon_get_theme_option('vg_google_map_api_key'));
 
         wp_enqueue_style('style', get_stylesheet_uri());
         wp_enqueue_style('bootstrap', get_stylesheet_directory_uri().'/assets/css/bootstrap.min.css', array(), 1.0);
@@ -216,7 +216,7 @@ if (!function_exists('vg_get_woo_cart_icon')) {
         $cart_count = WC()->cart->cart_contents_count;
         $cart_url   = wc_get_cart_url();
         
-        $html .= '<a class="nav-link" href="' . $cart_url . '" title="My Cart"><i class="vg-icon-cart"></i>';
+        $html .= '<a class="nav-link" href="' . esc_url($cart_url) . '" title="My Cart"><i class="vg-icon-cart"></i>';
         
         if ($cart_count > 0) {
             $html .= '<span class="cart-contents-count">' . $cart_count . '</span>';
@@ -319,7 +319,7 @@ if (!function_exists('vg_woocommerce_get_product_thumbnail')) {
             $image_url = woocommerce_placeholder_img_src();
         }
 
-        $output = '<img class="w-100" src="'. $image_url .'" alt="'. $post->post_title .'" />';
+        $output = '<img class="w-100" src="'. esc_url($image_url) .'" alt="'. esc_html($post->post_title) .'" />';
         
         return $output;
     }

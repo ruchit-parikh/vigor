@@ -4,14 +4,14 @@
     $banner_image_url = wp_get_attachment_image_src(carbon_get_the_post_meta('vg_home_banner_image'), 'full')[0];
 ?>
 
-<section id="home-banner" style="background-image: url(<?php echo $banner_image_url; ?>)">
+<section id="home-banner" style="background-image: url(<?php echo esc_url($banner_image_url); ?>)">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="heading">
-                    <h1 class="vg-text-primary"><?php echo carbon_get_the_post_meta('vg_home_banner_header'); ?></h1>
+                    <h1 class="vg-text-primary"><?php echo esc_html(carbon_get_the_post_meta('vg_home_banner_header')); ?></h1>
                     <span class="text-light h3 font-weight-600">
-                        <?php echo carbon_get_the_post_meta('vg_home_banner_subheader'); ?>
+                        <?php echo esc_html(carbon_get_the_post_meta('vg_home_banner_subheader')); ?>
                     </span>
                 </div>
             </div>
@@ -23,8 +23,8 @@
                         $primary_page_link = '#';
                         $secondary_page_link = '#';
 
-                        $primary_page_id = carbon_get_the_post_meta('vg_home_banner_cta_primary_link');
-                        $secondary_page_id = carbon_get_the_post_meta('vg_home_banner_cta_secondary_link');
+                        $primary_page_id = esc_html(carbon_get_the_post_meta('vg_home_banner_cta_primary_link'));
+                        $secondary_page_id = esc_html(carbon_get_the_post_meta('vg_home_banner_cta_secondary_link'));
 
                         if (-1 === $primary_page_id):
                             $primary_page_link = carbon_get_the_post_meta('vg_home_banner_cta_primary_link_url');
@@ -39,15 +39,15 @@
                         endif;
                     ?>
 
-                    <?php if (!empty($primary_text = carbon_get_the_post_meta('vg_home_banner_cta_primary_text'))) : ?>
-                        <a href="<?php echo $primary_page_link; ?>" class="vg-btn vg-btn-primary text-uppercase">
-                            <span><?php echo $primary_text; ?></span>
+                    <?php if (!empty($primary_text = esc_html(carbon_get_the_post_meta('vg_home_banner_cta_primary_text')))) : ?>
+                        <a href="<?php echo esc_url($primary_page_link); ?>" class="vg-btn vg-btn-primary text-uppercase">
+                            <span><?php echo esc_html($primary_text); ?></span>
                         </a>
                     <?php endif; ?>
 
-                    <?php if (!empty($secondary_text = carbon_get_the_post_meta('vg_home_banner_cta_secondary_text'))) : ?>
-                        <a href="<?php echo $secondary_page_link; ?>" class="vg-btn vg-btn-outline-primary text-uppercase">
-                            <span><?php echo $secondary_text; ?></span>
+                    <?php if (!empty($secondary_text = esc_html(carbon_get_the_post_meta('vg_home_banner_cta_secondary_text')))) : ?>
+                        <a href="<?php echo esc_url($secondary_page_link); ?>" class="vg-btn vg-btn-outline-primary text-uppercase">
+                            <span><?php echo esc_html($secondary_text); ?></span>
                         </a>
                     <?php endif; ?>
                 </div>
@@ -61,11 +61,11 @@
         <div class="row my-4">
             <div class="col-lg-6">
                 <h2>
-                    <?php echo carbon_get_the_post_meta('vg_home_featured_section_title'); ?>
+                    <?php echo esc_html(carbon_get_the_post_meta('vg_home_featured_section_title')); ?>
                 </h2>
             </div>
             <div class="col-lg-6">
-                <?php echo wpautop(carbon_get_the_post_meta('vg_home_featured_section_description')); ?>
+                <?php echo wpautop(wp_kses(carbon_get_the_post_meta('vg_home_featured_section_description'))); ?>
             </div>
         </div>
     </div>
@@ -82,10 +82,10 @@
 
             <div class="container carousel-header">
                 <h2 class="text-light text-center">
-                    <?php echo carbon_get_the_post_meta('vg_home_coaches_section_title'); ?>
+                    <?php echo esc_html(carbon_get_the_post_meta('vg_home_coaches_section_title')); ?>
                 </h2>
                 <div class="text-light font-weight-500 text-center">
-                    <?php echo wpautop(carbon_get_the_post_meta('vg_home_coaches_section_subtitle')); ?>
+                    <?php echo wpautop(wp_kses(carbon_get_the_post_meta('vg_home_coaches_section_subtitle'))); ?>
                 </div>
             </div>
 
@@ -98,13 +98,13 @@
                             $coach_title     = get_the_title($coach_post->ID);
                         ?>
 
-                        <img class="d-block w-100 mx-auto" src="<?php echo $coach_image_url; ?>" alt="<?php echo $coach_title; ?>">
+                        <img class="d-block w-100 mx-auto" src="<?php echo esc_url($coach_image_url); ?>" alt="<?php echo esc_html($coach_title); ?>">
                         <div class="carousel-caption">
                             <h4 class="author">
-                                <?php echo $coach_title; ?>
+                                <?php echo esc_html($coach_title); ?>
                             </h4>
                             <div class="description">
-                                <?php echo apply_filters('the_content', $coach_post->post_content); ?>
+                                <?php echo apply_filters('the_content', wp_kses($coach_post->post_content)); ?>
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
             <?php if (!empty($link_text = carbon_get_the_post_meta('vg_home_coaches_section_cta_text'))): ?>
                 <?php 
                     $link_url     = '#';
-                    $link_page_id = carbon_get_the_post_meta('vg_home_coaches_section_cta_link');
+                    $link_page_id = esc_html(carbon_get_the_post_meta('vg_home_coaches_section_cta_link'));
 
                     if (-1 === $link_page_id) : 
                         $link_url = carbon_get_the_post_meta('vg_home_coaches_section_cta_link_url');
@@ -123,8 +123,8 @@
                     endif;
                 ?>
 
-                <a class="text-uppercase view-all-link" href="<?php echo $link_url; ?>">
-                    <?php echo $link_text; ?>
+                <a class="text-uppercase view-all-link" href="<?php echo esc_url($link_url); ?>">
+                    <?php echo esc_html($link_text); ?>
                 </a>
             <?php endif; ?>
             
@@ -146,7 +146,7 @@
             <div class="row my-4">
                 <div class="col-lg-12 mb-md-5">
                     <h2 class="text-center">
-                        <?php echo carbon_get_the_post_meta('vg_home_plans_section_title'); ?>
+                        <?php echo esc_html(carbon_get_the_post_meta('vg_home_plans_section_title')); ?>
                     </h2>
                 </div>
             </div>
@@ -155,13 +155,13 @@
                     <div class="col-md-4 mb-5">
                         <div class="plan">
                             <h3 class="text-uppercase font-style-normal">
-                                <?php echo $plan['name']; ?>
+                                <?php echo esc_html($plan['name']); ?>
                             </h3>
                             <ul class="features">
                                 <?php foreach ($plan['features'] as $feature): ?>
                                     <li>
                                         <span>
-                                            <?php echo $feature['title']; ?>
+                                            <?php echo esc_html($feature['title']); ?>
                                         </span>
                                         <i class="vg-check"></i>
                                     </li>
@@ -170,9 +170,9 @@
 
                             <div class="text-center">
                                 <?php if (!empty($plan['btn_text'])): ?>
-                                    <a href="<?php echo $plan['btn_link']; ?>" class="vg-btn vg-btn-primary">
+                                    <a href="<?php echo esc_url($plan['btn_link']); ?>" class="vg-btn vg-btn-primary">
                                         <span>
-                                            <?php echo $plan['btn_text']; ?>
+                                            <?php echo esc_html($plan['btn_text']); ?>
                                         </span>
                                     </a>
                                 <?php endif; ?>
@@ -187,7 +187,7 @@
 
 <section id="map">
     <h2 class="text-center">
-        <?php echo carbon_get_theme_option('map_title'); ?>
+        <?php echo esc_html(carbon_get_theme_option('map_title')); ?>
     </h2>
     <div id="map-canvas"></div>
 </section>
@@ -197,17 +197,17 @@
         <div class="row my-4">
             <div class="col-lg">
                 <h2>
-                    <?php echo carbon_get_the_post_meta('vg_home_share_passion_section_title'); ?>
+                    <?php echo esc_html(carbon_get_the_post_meta('vg_home_share_passion_section_title')); ?>
                 </h2>
 
                 <div class="my-4">
-                    <?php echo wpautop(carbon_get_the_post_meta('vg_home_share_passion_section_description')); ?>
+                    <?php echo wpautop(wp_kses(carbon_get_the_post_meta('vg_home_share_passion_section_description'))); ?>
                 </div>
                 
                 <?php if (!empty($shop_link_text = carbon_get_the_post_meta('vg_home_share_passion_section_shop_text'))) : ?>
                     <?php 
                         $shop_link_url = '#';
-                        $link_page_id  = carbon_get_the_post_meta('vg_home_share_passion_section_shop_link');
+                        $link_page_id  = esc_html(carbon_get_the_post_meta('vg_home_share_passion_section_shop_link'));
 
                         if (-1 === $link_page_id) : 
                             $shop_link_url = carbon_get_the_post_meta('vg_home_share_passion_section_shop_url');
@@ -215,8 +215,8 @@
                             $shop_link_url = get_page_link($link_page_id);
                         endif;
                     ?>
-                    <a href="<?php echo $shop_link_url; ?>" class="text-uppercase font-weight-bold d-block mb-5">
-                        <?php echo $shop_link_text; ?>
+                    <a href="<?php echo esc_url($shop_link_url); ?>" class="text-uppercase font-weight-bold d-block mb-5">
+                        <?php echo esc_html($shop_link_text); ?>
                     </a>
                 <?php endif; ?>
             </div>

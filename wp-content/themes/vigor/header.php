@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-transparent vg-bg-nlg-primary fixed-top navbar-light" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                <a class="navbar-brand" href="<?php echo esc_url(home_url( '/' ) ); ?>">
                     <?php
                         $light_logo = wp_get_attachment_image_src(carbon_get_theme_option('vg_logo_light'), 'full');
                         $dark_logo = wp_get_attachment_image_src(carbon_get_theme_option('vg_logo_dark'), 'full');
