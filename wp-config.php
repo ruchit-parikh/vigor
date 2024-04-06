@@ -49,14 +49,14 @@ define('FS_METHOD', 'direct');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY', 'A5BQuFARsTtEdt8+`~1]Ixh!^jlGcU.CTjUlk>Xg s[`49!Ss(I=pyhnB^>gM=Xb');
-define('SECURE_AUTH_KEY', 'B=rL5oT`,[Ez>>7d[17atDll3>ELlEWC$o2,TvGadD/ocLQ8s> zJne#1kkV}(q|');
-define('LOGGED_IN_KEY', 'btX :ce3w<g,^_BnU<zV3O7Kdp]7/n_fBeQv4qnA (f-|SgQgu6~!-ds<VF3ofVC');
-define('NONCE_KEY', '1c[-{8T^1PFa4NKaul[V5S;>MPFsoRB]9hAzx94I]#tz/GW)wM_FDF[ mZYBdaIt');
-define('AUTH_SALT', '_l$=mW$f|v>O+wnh=KIO^?Y3W),/0S1:YGE@HT)^E2<nqPm;gUaJKBG<icpk//?3');
-define('SECURE_AUTH_SALT', '33)tcsY3WebL*Bg5X2f:yi,&2I._YdMS]>ZDwk-Vj96}hW{0y8IRpEk!ld]vM$+,');
-define('LOGGED_IN_SALT', 'ap!riu};}2a[BFT){#~^UDEZ.#*}u!,P1Jr!m5D~-b^f:r>i9c+i$/vZT}9&!0>c');
-define('NONCE_SALT', 'PO[v|kfY6IkG_&*7@[>a1a@/8/gTK8r[ =fo/=Cf=?y0BMlgQ:Chqex!Q75+MQ_j');
+define('AUTH_KEY', 'YOUR_AUTH_KEY_GOES_HERE');
+define('SECURE_AUTH_KEY', 'YOUR_SECURE_AUTH_KEY_GOES_HERE');
+define('LOGGED_IN_KEY', 'YOUR_LOGGEDIN_KEY_GOES_HERE');
+define('NONCE_KEY', 'YOUR_NONCE_KEY_GOES_HERE');
+define('AUTH_SALT', 'YOUR_AUTH_SALT_GOES_HERE');
+define('SECURE_AUTH_SALT', 'YOUR_SECURE_AUTH_SALT_GOES_HERE');
+define('LOGGED_IN_SALT', 'YOUR_LOGGED_IN_SALT_GOES_HERE');
+define('NONCE_SALT', 'YOUR_NONCE_SALT_GOES_HERE');
 
 /**#@-*/
 
