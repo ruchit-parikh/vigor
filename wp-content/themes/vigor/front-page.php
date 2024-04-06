@@ -56,6 +56,7 @@
     </div>
 </section>
 
+<?php if(strlen(trim($desc = carbon_get_the_post_meta('vg_home_featured_section_description')))): ?>
 <section id="featured-description">
     <div class="container">
         <div class="row my-4">
@@ -65,11 +66,12 @@
                 </h2>
             </div>
             <div class="col-lg-6">
-                <?php echo wpautop(wp_kses(carbon_get_the_post_meta('vg_home_featured_section_description'))); ?>
+                <?php echo wpautop(wp_kses($desc)); ?>
             </div>
         </div>
     </div>
 </section>
+<?php endif; ?>
 
 <?php if (!empty($coaches = carbon_get_the_post_meta('vg_home_coaches_section_coaches'))) : ?>
     <section id="coaches">
@@ -185,12 +187,14 @@
     </section>
 <?php endif; ?>
 
+<?php if (vg_get_gmaps_api_key()): ?>
 <section id="map">
     <h2 class="text-center">
         <?php echo esc_html(carbon_get_theme_option('map_title')); ?>
     </h2>
     <div id="map-canvas"></div>
 </section>
+<?php endif; ?>
 
 <section id="share-passion" class="py-5">
     <div class="container">
@@ -201,7 +205,7 @@
                 </h2>
 
                 <div class="my-4">
-                    <?php echo wpautop(wp_kses(carbon_get_the_post_meta('vg_home_share_passion_section_description'))); ?>
+                    <?php echo $desc = carbon_get_the_post_meta('vg_home_share_passion_section_description') ? wpautop(wp_kses($desc)) : ''; ?>
                 </div>
                 
                 <?php if (!empty($shop_link_text = carbon_get_the_post_meta('vg_home_share_passion_section_shop_text'))) : ?>
@@ -243,3 +247,4 @@
 <?php get_template_part('templates/newsletter'); ?>
 
 <?php get_footer(); ?>
+
