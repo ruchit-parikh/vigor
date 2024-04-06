@@ -9,7 +9,7 @@ This wordpress project contains a theme for landing page. Landing page includes 
 ### How to setup
 - Clone this repository
 - Got `https://api.wordpress.org/secret-key/1.1/salt` to get random keys generated that you can use for your system and copy it in **wp-config.php** file.
-- Goto wp-content/themes/vigor and run command `composer install` to download all dependencies
+- Goto `wp-content/themes/vigor` and run command `composer install` to download all dependencies
 - Setup wordpress as you do by visting website on local server
 - Once installed login to dashboard and activate **Vigor** them and all required plugins.
 - Setup home page (front page) and define all settings and post meta for the page.
