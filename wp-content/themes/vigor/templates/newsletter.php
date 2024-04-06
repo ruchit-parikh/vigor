@@ -1,4 +1,4 @@
-<?php if (!empty($form = esc_html(carbon_get_the_post_meta('vg_home_newsletter_section_form_shortcode')))): ?>
+<?php if (!empty($form = carbon_get_the_post_meta('vg_home_newsletter_section_form_shortcode'))): ?>
     <section id="newsletter" class="vg-bg-primary py-5">
         <div class="container">
             <div class="row my-4 text-center">

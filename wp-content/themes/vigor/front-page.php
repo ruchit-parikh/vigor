@@ -66,7 +66,7 @@
                 </h2>
             </div>
             <div class="col-lg-6">
-                <?php echo wpautop(wp_kses($desc)); ?>
+                <?php echo wpautop(wp_kses_post($desc)); ?>
             </div>
         </div>
     </div>
@@ -87,7 +87,7 @@
                     <?php echo esc_html(carbon_get_the_post_meta('vg_home_coaches_section_title')); ?>
                 </h2>
                 <div class="text-light font-weight-500 text-center">
-                    <?php echo wpautop(wp_kses(carbon_get_the_post_meta('vg_home_coaches_section_subtitle'))); ?>
+                    <?php echo wpautop(wp_kses_post(carbon_get_the_post_meta('vg_home_coaches_section_subtitle'))); ?>
                 </div>
             </div>
 
@@ -106,7 +106,7 @@
                                 <?php echo esc_html($coach_title); ?>
                             </h4>
                             <div class="description">
-                                <?php echo apply_filters('the_content', wp_kses($coach_post->post_content)); ?>
+                                <?php echo apply_filters('the_content', wp_kses_post($coach_post->post_content)); ?>
                             </div>
                         </div>
                     </div>
@@ -205,7 +205,7 @@
                 </h2>
 
                 <div class="my-4">
-                    <?php echo $desc = carbon_get_the_post_meta('vg_home_share_passion_section_description') ? wpautop(wp_kses($desc)) : ''; ?>
+                    <?php echo $desc = carbon_get_the_post_meta('vg_home_share_passion_section_description') ? wpautop(wp_kses_post($desc)) : ''; ?>
                 </div>
                 
                 <?php if (!empty($shop_link_text = carbon_get_the_post_meta('vg_home_share_passion_section_shop_text'))) : ?>

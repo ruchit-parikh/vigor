@@ -4,7 +4,7 @@
             <?php echo esc_html($office['name']); ?>
         </h3>
         <address>
-            <?php echo wpautop(wp_kses($office['address'])); ?>
+            <?php echo wpautop(wp_kses_post($office['address'])); ?>
         </address>
     </div>
     
